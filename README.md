@@ -3,7 +3,7 @@
 Responsive sidebar template based on bootstrap framwork
 
 ## Demo
-[check it out](https://azouaoui-med.github.io/pro-sidebar-template/)
+[Live preview](https://azouaoui-med.github.io/pro-sidebar-template/)
 
 ## Dependencies
 *   [Bootstrap 3](https://getbootstrap.com/)
