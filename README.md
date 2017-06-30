@@ -7,6 +7,7 @@ Responsive sidebar template based on bootstrap framwork
 
 ## Dependencies
 *   [Bootstrap 3](https://getbootstrap.com/)
+*   [JQuery](http://jquery.com/)
 *   [Font awsome](http://fontawesome.io/)
 *   [Malihu custom scrollbar plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 
