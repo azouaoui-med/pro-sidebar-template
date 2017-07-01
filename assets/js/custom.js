@@ -17,10 +17,13 @@
 	    $(".page-wrapper").toggleClass("toggled");	    
        	 });
 
-            $(".sidebar-wrapper").mCustomScrollbar({
-    		axis:"y",
-    		autoHideScrollbar: true,
-    		scrollInertia: 300
-	});
+           if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                   $(".sidebar-wrapper").mCustomScrollbar({
+                            axis:"y",
+                            autoHideScrollbar: true,
+                            scrollInertia: 300
+                    });
+                    $(".sidebar-wrapper").addClass("desktop");
 
+            }
     });

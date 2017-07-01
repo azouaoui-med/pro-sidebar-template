@@ -16,14 +16,17 @@
 
 /*----------------toggeled sidebar----------------*/
 .page-wrapper.toggled .sidebar-wrapper{
-    left:-300px;
+    left:0px;
 }
-.page-wrapper.toggled .page-content{
-    padding-left: 0;
+@media screen and (min-width: 768px) {
+    .page-wrapper.toggled .page-content{
+        padding-left: 300px;
+    }
 }
+
 .page-wrapper.toggled #toggle-sidebar{
-    position: fixed;
-    color: #0f151f;
+    position: absolute;
+    color: #cacaca;
 }
 
 /*----------------sidebar-wrapper----------------*/
@@ -34,8 +37,14 @@
     max-height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -300px;
+     overflow-y: scroll;
 }
+
+.sidebar-wrapper.desktop{
+    overflow-y: hidden;
+}
+
 .sidebar-wrapper ul li:hover a i,
 .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .sidebar-wrapper .sidebar-search input.search-menu:focus + span{
@@ -230,7 +239,7 @@
 .page-wrapper .page-content{
     display: inline-block;
     width: 100%;
-    padding-left: 300px;
+    padding-left: 0px;
 }
 .page-wrapper .page-content > div {
     padding: 20px 40px;
@@ -240,10 +249,10 @@
 }
 /*---------------------toggle-sidebar button-------------------------*/
 #toggle-sidebar{
-    position: absolute;
+    position: fixed;
     top: 13px;
     left: 25px;
-    color: #cacaca;
+    color: #0f151f;
     font-size: 18px;
 }
 
