@@ -77,6 +77,7 @@
     padding: 20px;
     overflow: hidden;
     border-top: 1px solid #202a3c;
+    border-bottom: 1px solid #10151d;
 }
 .sidebar-wrapper .sidebar-header .user-pic{
         float: left;
@@ -111,21 +112,26 @@
 /*-----------------------sidebar-search------------------------*/
 
 .sidebar-wrapper .sidebar-search{
-    border-bottom: 1px solid #222b35;
-    background: #0c1119;
+    border-top: 1px solid #222b35;
+    border-bottom: 1px solid #10151d;
+    
 }
 .sidebar-wrapper .sidebar-search > div{
           padding: 10px 20px;
 }
  .sidebar-wrapper .sidebar-search input.search-menu,
  .sidebar-wrapper .sidebar-search .input-group-addon{
-    background: none;   
+    background: #0c1119;  
     box-shadow: none;
     color: #d0d0d0;   
     border-color: #3c485d;
     transition: color .5s
 }
 /*----------------------sidebar-menu-------------------------*/
+.sidebar-wrapper .sidebar-menu{
+    border-top: 1px solid #222b35;   
+}
+
 .sidebar-wrapper .sidebar-menu .header-menu span{
     font-size: 14px;
     text-transform: uppercase;
