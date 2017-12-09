@@ -98,16 +98,9 @@
         font-size: 12px;
         color: #929292;
 }
-.sidebar-wrapper .sidebar-header .user-info .user-setting a{
-        font-size: 12px;
-        color: #d0d0d0;
-        margin-right: 5px;
+.sidebar-wrapper .sidebar-header .user-info .user-status{
+        display: inline-block;
 }
-.sidebar-wrapper .sidebar-header .user-info .connected{
-        font-size: 8px;
-        color: #01bb08;
-        margin-left: 5px;
-    }
 
 /*-----------------------sidebar-search------------------------*/
 
