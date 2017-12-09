@@ -119,14 +119,11 @@
 }
  .sidebar-wrapper .sidebar-search input.search-menu,
  .sidebar-wrapper .sidebar-search .input-group-addon{
-     background: none;
-     border: none;
-     border-bottom: 1px solid #2d3440;
-     border-radius: 0;
-     box-shadow: none;
-     color: #d0d0d0;
-     height: auto;
-     padding: 0;
+    background: none;   
+    box-shadow: none;
+    color: #d0d0d0;   
+    border-color: #3c485d;
+    transition: color .5s
 }
 /*----------------------sidebar-menu-------------------------*/
 .sidebar-wrapper .sidebar-menu .header-menu span{
