@@ -62,6 +62,9 @@
     height: calc(100% - 30px);
     
 }
+.sidebar-content.desktop{
+    overflow-y: scroll;
+}
 /*--------------------sidebar-brand----------------------*/
 .sidebar-wrapper .sidebar-brand {
         padding: 15px 20px;
