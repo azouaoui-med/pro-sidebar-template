@@ -58,12 +58,9 @@
 } 
 /*----------------sidebar-content----------------*/
 .sidebar-content{
-    max-height: calc(100vh - 30px);
-    height: calc(100vh - 30px);
-    overflow-y: scroll;
-}
-.sidebar-content.desktop{
-    overflow-y: hidden;
+    max-height: calc(100% - 30px);
+    height: calc(100% - 30px);
+    
 }
 /*--------------------sidebar-brand----------------------*/
 .sidebar-wrapper .sidebar-brand {
