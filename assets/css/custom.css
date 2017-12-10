@@ -60,6 +60,7 @@
 .sidebar-content{
     max-height: calc(100vh - 30px);
     height: calc(100vh - 30px);
+    overflow-y: scroll;
 }
 .sidebar-content.desktop{
     overflow-y: hidden;
