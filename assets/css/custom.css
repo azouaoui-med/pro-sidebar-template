@@ -40,6 +40,8 @@
     left: -300px;
 }
 
+
+
 .sidebar-wrapper ul li:hover a i,
 .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .sidebar-wrapper .sidebar-search input.search-menu:focus + span{
@@ -62,9 +64,9 @@
 }
 /*--------------------sidebar-brand----------------------*/
 .sidebar-wrapper .sidebar-brand {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #10151d;
+        padding: 15px 20px;
+        text-align: center;
+        border-bottom: 1px solid #10151d;
 }
 
 .sidebar-wrapper .sidebar-brand > a{
@@ -236,7 +238,9 @@
 /*--------------------------side-footer------------------------------*/
 
 .sidebar-footer{
+    position: absolute;
     width: 100%;
+    bottom: 0;
     display: flex;
     background: #1c232f;  
     box-shadow: 0px -1px 5px #0c1119;
