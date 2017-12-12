@@ -11,6 +11,6 @@ Responsive sidebar template based on bootstrap framwork
 *   [Font awsome](http://fontawesome.io/)
 *   [Malihu custom scrollbar plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 
-## Licence
-This code is released under the [MIT](https://github.com/azouaoui-med/pro-sidebar-template/blob/gh-pages/LICENSE) licence.
+## License
+This code is released under the [MIT](https://github.com/azouaoui-med/pro-sidebar-template/blob/gh-pages/LICENSE) license.
 
