@@ -259,6 +259,7 @@
     height: 30px;
     line-height: 30px;
     color:#9c9c9c;
+    position: relative;
 }
 .sidebar-footer > a:first-child {
     border-left: none;
@@ -269,6 +270,11 @@
 .sidebar-footer > a:hover{
     color: #ccc;
 }
+.sidebar-footer > a .notification {
+    position: absolute;
+    top: 0;
+}
+
 /*--------------------------page-content-----------------------------*/
 .page-wrapper .page-content{
     display: inline-block;
