@@ -31,8 +31,8 @@
 
 /*----------------sidebar-wrapper----------------*/
 .sidebar-wrapper{
-    width: 300px;
-    background: #1c232f;
+    width: 260px;
+    background: #151b25;
     height: 100%;
     max-height: 100%;
     position: fixed;
@@ -44,7 +44,8 @@
 
 .sidebar-wrapper ul li:hover a i,
 .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
-.sidebar-wrapper .sidebar-search input.search-menu:focus + span{
+.sidebar-wrapper .sidebar-search input.search-menu:focus + span,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i{
     color: #0086fd;
 }
 
@@ -97,14 +98,14 @@
 }
 .sidebar-wrapper .sidebar-header .user-info{
         float: left;
-        color: #ccc;
+        color: #b3b8c1;
 }
 .sidebar-wrapper .sidebar-header .user-info span{
         display: block;
 }
 .sidebar-wrapper .sidebar-header .user-info .user-role{
         font-size: 12px;
-        color: #929292;
+        color: #7c818a;
 }
 .sidebar-wrapper .sidebar-header .user-info .user-status{
         display: inline-block;
@@ -122,11 +123,13 @@
 }
  .sidebar-wrapper .sidebar-search input.search-menu,
  .sidebar-wrapper .sidebar-search .input-group-addon{
-    background: #0c1119;  
+    background: #0f131b;  
     box-shadow: none;
-    color: #9c9c9c;   
-    border-color: #3c485d;
-    transition: color .5s
+    color: #7c818a;   
+    border-color: #2a3342;
+    border-width: 2px;
+    height: 40px;
+    transition: color .5s;
 }
 /*----------------------sidebar-menu-------------------------*/
 .sidebar-wrapper .sidebar-menu{
@@ -135,32 +138,32 @@
 }
 
 .sidebar-wrapper .sidebar-menu .header-menu span{
-    font-size: 14px;
-    text-transform: uppercase;
     font-weight: bold;
-    color: #b9b9b9;
-    padding: 10px 20px;
+    font-size: 14px;
+    color: #4e5767;
+    padding: 15px 20px;
     display: inline-block;
 }
 
 .sidebar-wrapper .sidebar-menu ul li a{
     display: inline-block;
     width: 100%;
-    color: #9c9c9c;
+    color: #7c818a;
     text-decoration: none;
     transition:color .3s;
     position: relative;
-    padding: 5px 30px 5px 20px;
+    padding: 8px 30px 8px 20px; 
 }
 
-.sidebar-wrapper .sidebar-menu ul li:hover > a{
-    color: #ccc;
+.sidebar-wrapper .sidebar-menu ul li:hover > a,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a{
+    color: #b3b8c1;
 }
 
 .sidebar-wrapper .sidebar-menu  ul li a i{
     margin-right: 10px;
     font-size: 14px;
-    background: #0c1119;
+    background: #0f131b;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -171,7 +174,7 @@
 
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown div {
-    background: #0c1119;
+    background: #0f131b;
     border-bottom: 1px solid #222b35;
 }
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
@@ -247,7 +250,7 @@
     width: 100%;
     bottom: 0;
     display: flex;
-    background: #1c232f;  
+    background: #151b25;  
     box-shadow: 0px -1px 5px #0c1119;
     border-top: 1px solid #222b35;
 }
@@ -258,7 +261,7 @@
     border-right: 1px solid #10151d;
     height: 30px;
     line-height: 30px;
-    color:#9c9c9c;
+    color:#7c818a;
     position: relative;
 }
 .sidebar-footer > a:first-child {
@@ -268,7 +271,7 @@
     border-right: none;
 }
 .sidebar-footer > a:hover{
-    color: #ccc;
+    color: #b3b8c1;
 }
 .sidebar-footer > a .notification {
     position: absolute;
