@@ -9,6 +9,17 @@
     transition: all 0.3s;
 }
 
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(10deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(-10deg); }
+    50% { transform: rotate(0deg); }
+    60% { transform: rotate(5deg); }
+    70% { transform: rotate(0deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
 /*----------------page-wrapper----------------*/
 .page-wrapper{
     height: 100vh;
@@ -127,8 +138,6 @@
     box-shadow: none;
     color: #7c818a;   
     border-color: #2a3342;
-    border-width: 2px;
-    height: 40px;
     transition: color .5s;
 }
 /*----------------------sidebar-menu-------------------------*/
@@ -152,13 +161,15 @@
     text-decoration: none;
     transition:color .3s;
     position: relative;
-    padding: 8px 30px 8px 20px; 
+    padding: 8px 30px 8px 20px;
+
 }
 
 .sidebar-wrapper .sidebar-menu ul li:hover > a,
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a{
     color: #b3b8c1;
 }
+
 
 .sidebar-wrapper .sidebar-menu  ul li a i{
     margin-right: 10px;
@@ -169,6 +180,13 @@
     line-height: 30px;
     text-align: center;
     border-radius: 4px;
+    border: 1px solid #2a3342;
+
+}
+
+.sidebar-wrapper .sidebar-menu ul li a:hover > i::before{
+    display: inline-block;
+     animation: swing ease-in-out .5s 1 alternate;
 }
 
 
