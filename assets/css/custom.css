@@ -209,7 +209,8 @@
         -moz-osx-font-smoothing: grayscale;
         position: absolute;
         right: 15px;
-        top: 10px;
+        top: 50%;
+        transform: translateY(-50%);
 
 }
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
