@@ -1,14 +1,3 @@
-.sidebar-wrapper,
-.sidebar-wrapper .sidebar-dropdown > a:after,
-.sidebar-wrapper ul li a i,
-.page-wrapper .page-content {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
 @keyframes swing {
     0% { transform: rotate(0deg); }
     10% { transform: rotate(10deg); }
@@ -20,11 +9,53 @@
     80% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
 }
+
+@keyframes sonar { 
+  0% {transform: scale(.9); opacity:1;}
+  100% {transform: scale(2);opacity: 0;}
+}
+
+
+.page-wrapper .sidebar-wrapper,
+.sidebar-wrapper .sidebar-dropdown > a:after,
+.sidebar-wrapper ul li a i,
+.page-wrapper .page-content,
+.sidebar-wrapper .sidebar-search input.search-menu,
+.sidebar-wrapper .sidebar-search .input-group-addon,
+.sidebar-wrapper .sidebar-menu ul li a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
 /*----------------page-wrapper----------------*/
 .page-wrapper{
     height: 100vh;
 }
 
+.page-wrapper .theme{
+    width: 40px;
+    height: 40px;
+    display: inline-block;  
+    border-radius: 4px;
+    margin: 2px;
+}
+.page-wrapper .theme.default-theme{
+    background: #42515d;
+}
+.page-wrapper .theme.light-theme{
+    background: #ccc;
+}
+.page-wrapper .theme.dark-theme{
+    background: #151b25;
+}
+.page-wrapper .theme.tree-theme{
+    background: #18694f;
+}
+.page-wrapper .theme.purple-theme{
+    background: #5f3b5d;
+}
 /*----------------toggeled sidebar----------------*/
 .page-wrapper.toggled .sidebar-wrapper{
     left:0px;
@@ -34,32 +65,18 @@
         padding-left: 300px;
     }
 }
-
 .page-wrapper.toggled #toggle-sidebar{
     position: absolute;
-    color: #cacaca;
 }
-
 /*----------------sidebar-wrapper----------------*/
 .sidebar-wrapper{
     width: 260px;
-    background: #151b25;
     height: 100%;
     max-height: 100%;
     position: fixed;
     top: 0;
     left: -300px;
 }
-
-
-
-.sidebar-wrapper ul li:hover a i,
-.sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
-.sidebar-wrapper .sidebar-search input.search-menu:focus + span,
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i{
-    color: #0086fd;
-}
-
 .sidebar-wrapper ul{
     list-style-type: none;
     padding: 0;
@@ -73,8 +90,7 @@
     max-height: calc(100% - 30px);
     height: calc(100% - 30px);
     overflow-y: scroll;
-    position: relative;
-    
+    position: relative;    
 }
 .sidebar-content.desktop{
     overflow-y: hidden;
@@ -83,117 +99,68 @@
 .sidebar-wrapper .sidebar-brand {
         padding: 15px 20px;
         text-align: center;
-        border-bottom: 1px solid #10151d;
 }
-
 .sidebar-wrapper .sidebar-brand > a{
-    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
 }
-
 /*--------------------sidebar-header----------------------*/
 .sidebar-wrapper .sidebar-header{
     padding: 20px;
     overflow: hidden;
-    border-top: 1px solid #202a3c;
-    border-bottom: 1px solid #10151d;
 }
 .sidebar-wrapper .sidebar-header .user-pic{
-        float: left;
-        width: 60px;
-        padding: 2px;
-        border: 1px solid #585858;
-        border-radius: 8px;
-        margin-right:15px;
+    float: left;
+    width: 60px;
+    padding: 2px;
+    border-radius: 8px;
+    margin-right:15px;
 }
 .sidebar-wrapper .sidebar-header .user-info{
-        float: left;
-        color: #b3b8c1;
+    float: left; 
 }
 .sidebar-wrapper .sidebar-header .user-info span{
-        display: block;
+    display: block;
 }
 .sidebar-wrapper .sidebar-header .user-info .user-role{
-        font-size: 12px;
-        color: #7c818a;
+    font-size: 12px;        
 }
 .sidebar-wrapper .sidebar-header .user-info .user-status{
-        display: inline-block;
+    display: inline-block;
 }
-
 /*-----------------------sidebar-search------------------------*/
-
-.sidebar-wrapper .sidebar-search{
-    border-top: 1px solid #222b35;
-    border-bottom: 1px solid #10151d;
-    
-}
 .sidebar-wrapper .sidebar-search > div{
-          padding: 10px 20px;
-}
- .sidebar-wrapper .sidebar-search input.search-menu,
- .sidebar-wrapper .sidebar-search .input-group-addon{
-    background: #0f131b;  
-    box-shadow: none;
-    color: #7c818a;   
-    border-color: #2a3342;
-    transition: color .5s;
+    padding: 10px 20px;
 }
 /*----------------------sidebar-menu-------------------------*/
-.sidebar-wrapper .sidebar-menu{
-    border-top: 1px solid #222b35;   
+.sidebar-wrapper .sidebar-menu{   
     padding-bottom: 10px;
 }
-
 .sidebar-wrapper .sidebar-menu .header-menu span{
     font-weight: bold;
     font-size: 14px;
-    color: #4e5767;
     padding: 15px 20px 5px 20px;
     display: inline-block;
 }
-
 .sidebar-wrapper .sidebar-menu ul li a{
     display: inline-block;
     width: 100%;
-    color: #7c818a;
     text-decoration: none;
-    transition:color .3s;
     position: relative;
     padding: 8px 30px 8px 20px;
-
 }
-
-.sidebar-wrapper .sidebar-menu ul li:hover > a,
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a{
-    color: #b3b8c1;
-}
-
-
 .sidebar-wrapper .sidebar-menu  ul li a i{
     margin-right: 10px;
     font-size: 14px;
-    background: #0f131b;
     width: 30px;
     height: 30px;
     line-height: 30px;
     text-align: center;
     border-radius: 4px;
-    border: 1px solid #2a3342;
-
 }
-
 .sidebar-wrapper .sidebar-menu ul li a:hover > i::before{
     display: inline-block;
-     animation: swing ease-in-out .5s 1 alternate;
-}
-
-
-
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown div {
-    background: #0f131b;
-    border-bottom: 1px solid #222b35;
+    animation: swing ease-in-out .5s 1 alternate;
 }
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
         content: "\f105";
@@ -234,8 +201,6 @@
         -moz-osx-font-smoothing: grayscale;
         margin-right:10px;
         font-size: 10px;
-
-
 }
 
 .sidebar-wrapper .sidebar-menu ul li a span.label,
@@ -244,15 +209,10 @@
     margin-top: 8px;
     margin-left:5px;
 }
-
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .badge,
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .label{
     float: right;    
      margin-top: 0px;
-}
-
-.sidebar-wrapper .sidebar-menu .badge{
-    background: #384558;
 }
 .sidebar-wrapper .sidebar-menu .sidebar-submenu{
     display: none;
@@ -262,40 +222,44 @@
     right: 17px;
 }
 /*--------------------------side-footer------------------------------*/
-
 .sidebar-footer{
     position: absolute;
     width: 100%;
     bottom: 0;
     display: flex;
-    background: #151b25;  
-    box-shadow: 0px -1px 5px #0c1119;
-    border-top: 1px solid #222b35;
 }
 .sidebar-footer > a {
     flex-grow: 1;
     text-align: center;
-    border-left: 1px solid #222b35;
-    border-right: 1px solid #10151d;
     height: 30px;
     line-height: 30px;
-    color:#7c818a;
     position: relative;
-}
-.sidebar-footer > a:first-child {
-    border-left: none;
-}
-.sidebar-footer > a:last-child {
-    border-right: none;
-}
-.sidebar-footer > a:hover{
-    color: #b3b8c1;
 }
 .sidebar-footer > a .notification {
     position: absolute;
+    top: 0;    
+}
+.badge-sonar {
+    display: inline-block;
+    background:#980303;
+    border-radius: 50%;
+    height: 8px;    
+    width: 8px;
+    position: absolute;
     top: 0;
 }
-
+.badge-sonar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #980303;
+    opacity: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    animation: sonar 1.5s infinite;
+}
 /*--------------------------page-content-----------------------------*/
 .page-wrapper .page-content{
     display: inline-block;
@@ -316,18 +280,10 @@
     color: #0f151f;
     font-size: 18px;
 }
-
 /*----------------  Scroll bar style   --------------- */
-
 .mCSB_scrollTools{
     width: 6px;
 }
 .mCSB_inside>.mCSB_container{
     margin-right: 0px; 
-}
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
-{
-    background: #657692;
 }

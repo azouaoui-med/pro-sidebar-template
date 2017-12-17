@@ -11,13 +11,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
-        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/custom.css">    
+        <link rel="stylesheet" href="assets/css/custom-themes.css">  
 
     </head>
 
     <body>
 
-        <div class="page-wrapper">
+        <div class="page-wrapper default-theme">
             <nav id="sidebar" class="sidebar-wrapper">
               <div class="sidebar-content">
                 <a href="#" id="toggle-sidebar"><i class="fa fa-bars"></i></a>
@@ -114,7 +115,7 @@
                 <div class="sidebar-footer">
                     <a href="#"><i class="fa fa-bell"></i><span class="label label-warning notification">3</span></a>
                     <a href="#"><i class="fa fa-envelope"></i><span class="label label-success notification">7</span></a>
-                    <a href="#"><i class="fa fa-gear"></i></a>
+                    <a href="#"><i class="fa fa-gear"></i><span class="badge-sonar"></span></a>
                     <a href="#"><i class="fa fa-power-off"></i></a>
                 </div>
             </nav><!-- sidebar-wrapper  -->
@@ -124,6 +125,20 @@
                         <h1>Pro sidebar template</h1>
                         <p>This is a responsive sidebar template with dropdown menu based on bootstrap framework.</p>
                         <p>To toggle the sidebar click on the icon <i class="fa fa-bars"></i> above on the top left.</p>
+                        <hr>
+                        <h3>Choose a theme</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div>
+                                    <a href="#" data-theme="default-theme" class="theme default-theme selected"></a>            
+                                    <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                                     <a href="#" data-theme="dark-theme" class="theme dark-theme"></a>
+                                      <a href="#" data-theme="tree-theme" class="theme tree-theme"></a>
+                                         <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
                         <a href="https://github.com/azouaoui-med/pro-sidebar-template" class="btn btn-default" target="_blank"><i class="fa fa-github"></i> View source</a>
                         <a href="https://github.com/azouaoui-med/pro-sidebar-template/archive/gh-pages.zip" class="btn btn-default" target="_blank"><i class="fa fa-download"></i> Download</a>
                     </div>
