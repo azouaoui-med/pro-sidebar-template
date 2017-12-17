@@ -44,6 +44,9 @@
 .page-wrapper .theme.default-theme{
     background: #42515d;
 }
+.page-wrapper .theme.black-theme{
+    background: #1d1d1d;
+}
 .page-wrapper .theme.light-theme{
     background: #ccc;
 }

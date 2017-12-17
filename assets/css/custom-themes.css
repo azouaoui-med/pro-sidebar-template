@@ -387,3 +387,73 @@
 .purple-theme .mCSB_scrollTools .mCSB_draggerRail {
     background-color: transparent;
 }
+/*-----------------------------black-theme-------------------------------------------------*/
+.black-theme .sidebar-wrapper{
+    background: #1d1d1d;
+}
+.black-theme .sidebar-wrapper .sidebar-header,
+.black-theme .sidebar-wrapper .sidebar-search,
+.black-theme .sidebar-wrapper .sidebar-menu{
+    border-top: 1px solid #2b2b2b;
+}
+.black-theme .sidebar-wrapper .sidebar-search input.search-menu,
+.black-theme .sidebar-wrapper .sidebar-search .input-group-addon{
+    border-color: #2b2b2b;
+    box-shadow: none;
+}
+.page-wrapper.black-theme.toggled #toggle-sidebar,
+.black-theme .sidebar-wrapper .sidebar-header .user-info .user-role,
+.black-theme .sidebar-wrapper .sidebar-search input.search-menu,
+.black-theme .sidebar-wrapper .sidebar-search .input-group-addon,
+.black-theme .sidebar-wrapper .sidebar-brand > a,
+.black-theme .sidebar-wrapper .sidebar-menu ul li a,
+.black-theme .sidebar-footer > a{
+    color: #bdbdbd;
+}
+.page-wrapper.black-theme.toggled #toggle-sidebar:hover,
+.black-theme .sidebar-wrapper .sidebar-menu ul li:hover > a,
+.black-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a,
+.black-theme .sidebar-wrapper .sidebar-header .user-info,
+.black-theme .sidebar-wrapper .sidebar-brand > a:hover,
+.black-theme .sidebar-footer > a:hover i{
+    color: #ffffff;
+}
+.black-theme .sidebar-wrapper ul li:hover a i,
+.black-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
+.black-theme .sidebar-wrapper .sidebar-search input.search-menu:focus + span,
+.black-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i{
+    color: #f9261f;
+}
+.black-theme .sidebar-wrapper .sidebar-menu  ul li a i,
+.black-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
+.black-theme .sidebar-wrapper .sidebar-search input.search-menu,
+.black-theme .sidebar-wrapper .sidebar-search .input-group-addon {
+    background: #2b2b2b;
+}
+
+.black-theme .sidebar-wrapper .sidebar-menu .header-menu span{
+    color: #6c7b88;
+}
+.black-theme .sidebar-wrapper .sidebar-menu .badge{
+    background: #484848;
+}
+.black-theme .sidebar-footer{
+    background: #2b2b2b;
+    box-shadow: 0px -1px 5px #131212;
+    border-top: 1px solid #3a3a3a;
+}
+.black-theme .sidebar-footer > a:first-child {
+    border-left: none;
+}
+.black-theme .sidebar-footer > a:last-child {
+    border-right: none;
+}
+.black-theme .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.black-theme .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.black-theme .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+{
+    background: #636363;
+}
+.black-theme .mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+}

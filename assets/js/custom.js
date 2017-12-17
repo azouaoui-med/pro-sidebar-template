@@ -16,7 +16,7 @@
          $("#toggle-sidebar").click(function(){
 	         $(".page-wrapper").toggleClass("toggled");	    
        	 });
-         var themes = "default-theme light-theme dark-theme tree-theme purple-theme";
+         var themes = "default-theme black-theme light-theme dark-theme tree-theme purple-theme";
          $('[data-theme]').click(function(){
             $('.page-wrapper').removeClass(themes);
             $('.page-wrapper').addClass($(this).attr('data-theme'));
