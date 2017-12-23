@@ -1,15 +1,15 @@
 /*-----------------------------default-theme-------------------------------------------------*/
 .default-theme .sidebar-wrapper{
-    background: #42515d;
+    background: #2B3A42;
 }
 .default-theme .sidebar-wrapper .sidebar-header,
 .default-theme .sidebar-wrapper .sidebar-search,
 .default-theme .sidebar-wrapper .sidebar-menu{
-    border-top: 1px solid #566673;
+    border-top: 1px solid #3a4d56;
 }
 .default-theme .sidebar-wrapper .sidebar-search input.search-menu,
 .default-theme .sidebar-wrapper .sidebar-search .input-group-addon{
-    border-color: #566673;
+    border-color: #3a4d56;
     box-shadow: none;
 }
 .page-wrapper.default-theme.toggled #toggle-sidebar,
@@ -19,7 +19,7 @@
 .default-theme .sidebar-wrapper .sidebar-brand > a,
 .default-theme .sidebar-wrapper .sidebar-menu ul li a,
 .default-theme .sidebar-footer > a{
-    color: #bdbdbd;
+    color: #bdd4dee3;
 }
 .page-wrapper.default-theme.toggled #toggle-sidebar:hover,
 .default-theme .sidebar-wrapper .sidebar-menu ul li:hover > a,
@@ -27,31 +27,31 @@
 .default-theme .sidebar-wrapper .sidebar-header .user-info,
 .default-theme .sidebar-wrapper .sidebar-brand > a:hover,
 .default-theme .sidebar-footer > a:hover i{
-    color: #ffffff;
+    color: #EFEFEF;
 }
 .default-theme .sidebar-wrapper ul li:hover a i,
 .default-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .default-theme .sidebar-wrapper .sidebar-search input.search-menu:focus + span,
 .default-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i{
-    color: #e1ff00;
+    color: #EFEFEF;
 }
 .default-theme .sidebar-wrapper .sidebar-menu  ul li a i,
 .default-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
 .default-theme .sidebar-wrapper .sidebar-search input.search-menu,
 .default-theme .sidebar-wrapper .sidebar-search .input-group-addon {
-    background: #566673;
+    background: #3a4d56;
 }
 
 .default-theme .sidebar-wrapper .sidebar-menu .header-menu span{
-    color: #6c7b88;
+    color: #bdd4de7a;
 }
 .default-theme .sidebar-wrapper .sidebar-menu .badge{
-    background: #718392;
+    background: #4a606b;
 }
 .default-theme .sidebar-footer{
-    background: #566673;
-    box-shadow: 0px -1px 5px #374550;
-    border-top: 1px solid #808e9a;
+    background: #3a4d56;
+    /* box-shadow: 0px -1px 5px #374550; */
+    border-top: 1px solid #495d67;
 }
 .default-theme .sidebar-footer > a:first-child {
     border-left: none;
@@ -422,7 +422,7 @@
 .black-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
 .black-theme .sidebar-wrapper .sidebar-search input.search-menu:focus + span,
 .black-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i{
-    color: #f9261f;
+    color: #edff00;
 }
 .black-theme .sidebar-wrapper .sidebar-menu  ul li a i,
 .black-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
