@@ -13,20 +13,20 @@
 
         });
 
-         $("#toggle-sidebar").click(function(){
-	         $(".page-wrapper").toggleClass("toggled");	    
-       	 });
-         var themes = "default-theme black-theme light-theme dark-theme tree-theme purple-theme";
-         $('[data-theme]').click(function(){
+        $("#toggle-sidebar").click(function(){
+	       $(".page-wrapper").toggleClass("toggled");	    
+       	});
+        var themes = "chiller-theme ice-theme cool-theme light-theme green-theme spicy-theme purple-theme";
+        $('[data-theme]').click(function(){
             $('.page-wrapper').removeClass(themes);
             $('.page-wrapper').addClass($(this).attr('data-theme'));
-         });
+        });
 
         if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             $(".sidebar-content").mCustomScrollbar({
-                    axis:"y",
-                    autoHideScrollbar: true,
-                    scrollInertia: 300
+                axis:"y",
+                autoHideScrollbar: true,
+                scrollInertia: 300
             });
             $(".sidebar-content").addClass("desktop");
 

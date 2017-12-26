@@ -1,6 +1,6 @@
 
  # Pro sidebar template
-Responsive sidebar template based on bootstrap framwork
+Responsive sidebar template width dropdown menu based on bootstrap framwork
 
 ## Demo
 [Live preview](https://azouaoui-med.github.io/pro-sidebar-template/)
