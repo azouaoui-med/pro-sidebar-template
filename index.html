@@ -12,10 +12,14 @@
       <link rel="stylesheet" href="assets/css/custom-themes.css">
    </head>
    <body>
-      <div class="page-wrapper chiller-theme">
+      <div class="page-wrapper chiller-theme toggled">
          <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
-               <a href="#" id="toggle-sidebar"><i class="fa fa-bars"></i></a>
+                <div id="toggle-sidebar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>               
                <div class="sidebar-brand">
                   <a href="#">pro sidebar</a>
                </div>
@@ -26,9 +30,9 @@
                   <div class="user-info">
                      <span class="user-name">Jhon <strong>Smith</strong></span>
                      <span class="user-role">Administrator</span>
-                     <div class="user-status">                       
-                        <a href="#"><span class="label label-success">Online</span></a>                           
-                     </div>
+                     <span class="user-status">                       
+                        <i class="fa fa-circle"></i><span>Online</span>                          
+                     </span>
                   </div>
                </div>
                <!-- sidebar-header  -->
@@ -48,7 +52,7 @@
                         <a  href="#" ><i class="fa fa-dashboard"></i><span>Dashboard</span><span class="label label-danger">New</span></a>
                         <div class="sidebar-submenu">
                            <ul>
-                              <li><a href="#">Dashboard 1<span class="label label-success">Pro</span></a> </li>
+                              <li><a href="#">Dashboard 1<span class="label label-primary">Pro</span></a> </li>
                               <li><a href="#">Dashboard 2</a></li>
                               <li><a href="#">Dashboard 3</a></li>
                            </ul>
@@ -117,8 +121,7 @@
             <div class="container-fluid">
                <div class="row">
                   <h1>Pro sidebar template</h1>
-                  <p>This is a responsive sidebar template with dropdown menu based on bootstrap framework.</p>
-                  <p>To toggle the sidebar click on the icon <i class="fa fa-bars"></i> above on the top left.</p>
+                  <h4>This is a responsive sidebar template with dropdown menu based on bootstrap framework.</h4>                 
                   <hr>
                   <h3>Choose a theme</h3>
                   <div class="container-fluid">

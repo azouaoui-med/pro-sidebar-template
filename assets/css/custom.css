@@ -38,17 +38,21 @@
     }
 }
 .page-wrapper .sidebar-wrapper,
+.sidebar-wrapper .sidebar-brand > a,
 .sidebar-wrapper .sidebar-dropdown > a:after,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
 .sidebar-wrapper ul li a i,
 .page-wrapper .page-content,
 .sidebar-wrapper .sidebar-search input.search-menu,
 .sidebar-wrapper .sidebar-search .input-group-addon,
-.sidebar-wrapper .sidebar-menu ul li a {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s;
+.sidebar-wrapper .sidebar-menu ul li a,
+#toggle-sidebar,
+#toggle-sidebar div {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 /*----------------page-wrapper----------------*/
 
@@ -93,9 +97,54 @@
         padding-left: 300px;
     }
 }
-.page-wrapper.toggled #toggle-sidebar {
+.page-wrapper.toggled #toggle-sidebar{
     position: absolute;
+    left: 220px;
 }
+.page-wrapper.toggled #toggle-sidebar div{
+     background: #bdbdbd;
+     opacity: 0;
+
+}
+.page-wrapper.toggled #toggle-sidebar div:first-of-type{
+    -webkit-transform: translateY(6px) rotateZ(45deg);
+    -moz-transform: translateY(6px) rotateZ(45deg);
+    -ms-transform: translateY(6px) rotateZ(45deg);
+    -o-transform: translateY(6px) rotateZ(45deg);
+    transform: translateY(6px) rotateZ(45deg);
+    opacity: 1;
+
+}
+.page-wrapper.toggled #toggle-sidebar div:last-of-type{
+    -webkit-transform: translateY(-6px) rotateZ(-45deg);
+    -moz-transform: translateY(-6px) rotateZ(-45deg);
+    -ms-transform: translateY(-6px) rotateZ(-45deg);
+    -o-transform: translateY(-6px) rotateZ(-45deg);
+    transform: translateY(-6px) rotateZ(-45deg);
+    opacity: 1;
+}
+/*---------------------toggle-sidebar button-------------------------*/
+
+#toggle-sidebar {
+    position: fixed;
+    top: 13px;
+    left: 25px; 
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+} 
+
+#toggle-sidebar div{
+    display: block;
+    height: 3px;
+    width: 20px;
+    background-color: #333333;
+    margin: 3px auto;
+    border-radius: 4px;
+}
+
+
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
@@ -129,7 +178,6 @@
 
 .sidebar-wrapper .sidebar-brand {
     padding: 15px 20px;
-    text-align: center;
 }
 .sidebar-wrapper .sidebar-brand > a {
     text-transform: uppercase;
@@ -151,14 +199,20 @@
 .sidebar-wrapper .sidebar-header .user-info {
     float: left;
 }
-.sidebar-wrapper .sidebar-header .user-info span {
+.sidebar-wrapper .sidebar-header .user-info > span {
     display: block;
 }
 .sidebar-wrapper .sidebar-header .user-info .user-role {
     font-size: 12px;
 }
 .sidebar-wrapper .sidebar-header .user-info .user-status {
-    display: inline-block;
+    font-size: 11px;
+    margin-top: 4px;
+}
+.sidebar-wrapper .sidebar-header .user-info .user-status i{
+    font-size: 8px;
+    margin-right:4px;
+    color: #5cb85c;
 }
 /*-----------------------sidebar-search------------------------*/
 
@@ -304,15 +358,7 @@
 .page-wrapper .page-content {
     overflow-x: hidden;
 }
-/*---------------------toggle-sidebar button-------------------------*/
 
-#toggle-sidebar {
-    position: fixed;
-    top: 13px;
-    left: 25px;
-    color: #0f151f;
-    font-size: 18px;
-}
 /*----------------  Scroll bar style   --------------- */
 
 .mCSB_scrollTools {
