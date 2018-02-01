@@ -27,6 +27,7 @@
         transform: rotate(0deg);
     }
 }
+
 @keyframes sonar {
     0% {
         transform: scale(.9);
@@ -37,9 +38,10 @@
         opacity: 0;
     }
 }
+
 .page-wrapper .sidebar-wrapper,
-.sidebar-wrapper .sidebar-brand > a,
-.sidebar-wrapper .sidebar-dropdown > a:after,
+.sidebar-wrapper .sidebar-brand>a,
+.sidebar-wrapper .sidebar-dropdown>a:after,
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
 .sidebar-wrapper ul li a i,
 .page-wrapper .page-content,
@@ -54,11 +56,13 @@
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
+
 /*----------------page-wrapper----------------*/
 
 .page-wrapper {
     height: 100vh;
 }
+
 .page-wrapper .theme {
     width: 40px;
     height: 40px;
@@ -66,56 +70,67 @@
     border-radius: 4px;
     margin: 2px;
 }
+
 .page-wrapper .theme.chiller-theme {
     background: #1d1d1d;
 }
+
 .page-wrapper .theme.ice-theme {
     background: #2B3A42;
 }
+
 .page-wrapper .theme.light-theme {
     background: #F1F0ED;
 }
+
 .page-wrapper .theme.cool-theme {
     background: #38373D;
 }
+
 .page-wrapper .theme.green-theme {
     background: #2C5E2E;
 }
+
 .page-wrapper .theme.spicy-theme {
     background: #8E2800;
 }
+
 .page-wrapper .theme.purple-theme {
     background: #372049;
 }
+
 /*----------------toggeled sidebar----------------*/
 
 .page-wrapper.toggled .sidebar-wrapper {
     left: 0px;
 }
+
 @media screen and (min-width: 768px) {
     .page-wrapper.toggled .page-content {
         padding-left: 300px;
     }
 }
-.page-wrapper.toggled #toggle-sidebar{
+
+.page-wrapper.toggled #toggle-sidebar {
     position: absolute;
     left: 220px;
 }
-.page-wrapper.toggled #toggle-sidebar div{
-     background: #bdbdbd;
-     opacity: 0;
 
+.page-wrapper.toggled #toggle-sidebar div {
+    background: #bdbdbd;
+    opacity: 0;
 }
-.page-wrapper.toggled #toggle-sidebar div:first-of-type{
+
+.page-wrapper.toggled #toggle-sidebar div:first-of-type {
     -webkit-transform: translateY(6px) rotateZ(45deg);
     -moz-transform: translateY(6px) rotateZ(45deg);
     -ms-transform: translateY(6px) rotateZ(45deg);
     -o-transform: translateY(6px) rotateZ(45deg);
     transform: translateY(6px) rotateZ(45deg);
     opacity: 1;
-
 }
-.page-wrapper.toggled #toggle-sidebar div:last-of-type{
+
+.page-wrapper.toggled #toggle-sidebar div:last-of-type {
     -webkit-transform: translateY(-6px) rotateZ(-45deg);
     -moz-transform: translateY(-6px) rotateZ(-45deg);
     -ms-transform: translateY(-6px) rotateZ(-45deg);
@@ -123,19 +138,20 @@
     transform: translateY(-6px) rotateZ(-45deg);
     opacity: 1;
 }
+
 /*---------------------toggle-sidebar button-------------------------*/
 
 #toggle-sidebar {
     position: fixed;
     top: 13px;
-    left: 25px; 
+    left: 25px;
     cursor: pointer;
     display: inline-block;
     width: auto;
     margin: 0 auto;
-} 
+}
 
-#toggle-sidebar div{
+#toggle-sidebar div {
     display: block;
     height: 3px;
     width: 20px;
@@ -143,7 +159,6 @@
     margin: 3px auto;
     border-radius: 4px;
 }
-
 
 /*----------------sidebar-wrapper----------------*/
 
@@ -155,14 +170,17 @@
     top: 0;
     left: -300px;
 }
+
 .sidebar-wrapper ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .sidebar-wrapper a {
     text-decoration: none;
 }
+
 /*----------------sidebar-content----------------*/
 
 .sidebar-content {
@@ -171,24 +189,29 @@
     overflow-y: scroll;
     position: relative;
 }
+
 .sidebar-content.desktop {
     overflow-y: hidden;
 }
+
 /*--------------------sidebar-brand----------------------*/
 
 .sidebar-wrapper .sidebar-brand {
     padding: 15px 20px;
 }
-.sidebar-wrapper .sidebar-brand > a {
+
+.sidebar-wrapper .sidebar-brand>a {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 /*--------------------sidebar-header----------------------*/
 
 .sidebar-wrapper .sidebar-header {
     padding: 20px;
     overflow: hidden;
 }
+
 .sidebar-wrapper .sidebar-header .user-pic {
     float: left;
     width: 60px;
@@ -196,40 +219,49 @@
     border-radius: 8px;
     margin-right: 15px;
 }
+
 .sidebar-wrapper .sidebar-header .user-info {
     float: left;
 }
-.sidebar-wrapper .sidebar-header .user-info > span {
+
+.sidebar-wrapper .sidebar-header .user-info>span {
     display: block;
 }
+
 .sidebar-wrapper .sidebar-header .user-info .user-role {
     font-size: 12px;
 }
+
 .sidebar-wrapper .sidebar-header .user-info .user-status {
     font-size: 11px;
     margin-top: 4px;
 }
-.sidebar-wrapper .sidebar-header .user-info .user-status i{
+
+.sidebar-wrapper .sidebar-header .user-info .user-status i {
     font-size: 8px;
-    margin-right:4px;
+    margin-right: 4px;
     color: #5cb85c;
 }
+
 /*-----------------------sidebar-search------------------------*/
 
-.sidebar-wrapper .sidebar-search > div {
+.sidebar-wrapper .sidebar-search>div {
     padding: 10px 20px;
 }
+
 /*----------------------sidebar-menu-------------------------*/
 
 .sidebar-wrapper .sidebar-menu {
     padding-bottom: 10px;
 }
+
 .sidebar-wrapper .sidebar-menu .header-menu span {
     font-weight: bold;
     font-size: 14px;
     padding: 15px 20px 5px 20px;
     display: inline-block;
 }
+
 .sidebar-wrapper .sidebar-menu ul li a {
     display: inline-block;
     width: 100%;
@@ -237,6 +269,7 @@
     position: relative;
     padding: 8px 30px 8px 20px;
 }
+
 .sidebar-wrapper .sidebar-menu ul li a i {
     margin-right: 10px;
     font-size: 14px;
@@ -246,11 +279,13 @@
     text-align: center;
     border-radius: 4px;
 }
-.sidebar-wrapper .sidebar-menu ul li a:hover > i::before {
+
+.sidebar-wrapper .sidebar-menu ul li a:hover>i::before {
     display: inline-block;
     animation: swing ease-in-out .5s 1 alternate;
 }
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown>a:after {
     content: "\f105";
     font-family: FontAwesome;
     font-weight: 400;
@@ -259,20 +294,22 @@
     text-align: center;
     text-decoration: none;
     background: 0 0;
-    speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
     right: 15px;
     top: 14px;
 }
+
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
     padding: 5px 0;
 }
+
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li {
     padding-left: 25px;
     font-size: 13px;
 }
+
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
     content: "\f10c";
     font-family: FontAwesome;
@@ -281,30 +318,34 @@
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-right: 10px;
     font-size: 10px;
 }
+
 .sidebar-wrapper .sidebar-menu ul li a span.label,
 .sidebar-wrapper .sidebar-menu ul li a span.badge {
     float: right;
     margin-top: 8px;
     margin-left: 5px;
 }
+
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .badge,
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .label {
     float: right;
     margin-top: 0px;
 }
+
 .sidebar-wrapper .sidebar-menu .sidebar-submenu {
     display: none;
 }
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a:after {
     transform: rotate(90deg);
     right: 17px;
 }
+
 /*--------------------------side-footer------------------------------*/
 
 .sidebar-footer {
@@ -313,17 +354,20 @@
     bottom: 0;
     display: flex;
 }
-.sidebar-footer > a {
+
+.sidebar-footer>a {
     flex-grow: 1;
     text-align: center;
     height: 30px;
     line-height: 30px;
     position: relative;
 }
-.sidebar-footer > a .notification {
+
+.sidebar-footer>a .notification {
     position: absolute;
     top: 0;
 }
+
 .badge-sonar {
     display: inline-block;
     background: #980303;
@@ -333,6 +377,7 @@
     position: absolute;
     top: 0;
 }
+
 .badge-sonar:after {
     content: '';
     position: absolute;
@@ -345,6 +390,7 @@
     height: 100%;
     animation: sonar 1.5s infinite;
 }
+
 /*--------------------------page-content-----------------------------*/
 
 .page-wrapper .page-content {
@@ -352,9 +398,11 @@
     width: 100%;
     padding-left: 0px;
 }
-.page-wrapper .page-content > div {
+
+.page-wrapper .page-content>div {
     padding: 20px 40px;
 }
+
 .page-wrapper .page-content {
     overflow-x: hidden;
 }
@@ -364,6 +412,7 @@
 .mCSB_scrollTools {
     width: 6px;
 }
+
 .mCSB_inside>.mCSB_container {
     margin-right: 0px;
 }
