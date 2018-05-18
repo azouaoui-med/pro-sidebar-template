@@ -50,8 +50,8 @@ body{
 .sidebar-wrapper .sidebar-search input.search-menu,
 .sidebar-wrapper .sidebar-search .input-group-text,
 .sidebar-wrapper .sidebar-menu ul li a,
-#toggle-sidebar,
-#toggle-sidebar div {
+#show-sidebar ,
+#close-sidebar  {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -112,56 +112,18 @@ body{
         padding-left: 300px;
     }
 }
-
-.page-wrapper.toggled #toggle-sidebar {
-    position: absolute;
-    left: 220px;
-}
-
-.page-wrapper.toggled #toggle-sidebar div {
-    background: #bdbdbd;
-    opacity: 0;
-}
-
-.page-wrapper.toggled #toggle-sidebar div:first-of-type {
-    -webkit-transform: translateY(6px) rotateZ(45deg);
-    -moz-transform: translateY(6px) rotateZ(45deg);
-    -ms-transform: translateY(6px) rotateZ(45deg);
-    -o-transform: translateY(6px) rotateZ(45deg);
-    transform: translateY(6px) rotateZ(45deg);
-    opacity: 1;
-}
-
-.page-wrapper.toggled #toggle-sidebar div:last-of-type {
-    -webkit-transform: translateY(-6px) rotateZ(-45deg);
-    -moz-transform: translateY(-6px) rotateZ(-45deg);
-    -ms-transform: translateY(-6px) rotateZ(-45deg);
-    -o-transform: translateY(-6px) rotateZ(-45deg);
-    transform: translateY(-6px) rotateZ(-45deg);
-    opacity: 1;
-}
-
-/*---------------------toggle-sidebar button-------------------------*/
-
-#toggle-sidebar {
+/*----------------show sidebar button----------------*/
+#show-sidebar {
     position: fixed;
-    top: 13px;
-    left: 40px;
-    cursor: pointer;
-    display: inline-block;
-    width: auto;
-    margin: 0 auto;
+    left: 0;
+    top: 10px;
+    border-radius: 0 4px 4px 0px;
+    width: 35px;
+    transition-delay: .3s;
 }
-
-#toggle-sidebar div {
-    display: block;
-    height: 3px;
-    width: 20px;
-    background-color: #333333;
-    margin: 3px auto;
-    border-radius: 4px;
+.page-wrapper.toggled #show-sidebar {
+    left: -40px;
 }
-
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
@@ -200,14 +162,22 @@ body{
 /*--------------------sidebar-brand----------------------*/
 
 .sidebar-wrapper .sidebar-brand {
-    padding: 15px 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-wrapper .sidebar-brand>a {
     text-transform: uppercase;
     font-weight: bold;
+    flex-grow: 1;
 }
 
+
+.sidebar-wrapper .sidebar-brand #close-sidebar {    
+    cursor: pointer;
+    font-size: 20px;
+}
 /*--------------------sidebar-header----------------------*/
 
 .sidebar-wrapper .sidebar-header {

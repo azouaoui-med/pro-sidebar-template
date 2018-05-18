@@ -9,7 +9,8 @@
     <title>Sidebar template</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/custom-themes.css">
@@ -18,15 +19,16 @@
 
 <body>
     <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
         <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
-                <div id="toggle-sidebar">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
                 <div class="sidebar-brand">
                     <a href="#">pro sidebar</a>
+                    <div id="close-sidebar">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </div>
                 <div class="sidebar-header">
                     <div class="user-pic">
@@ -94,7 +96,7 @@
                                 <ul>
                                     <li>
                                         <a href="#">Products
-                                            
+
                                         </a>
                                     </li>
                                     <li>
@@ -218,7 +220,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <h1>Sidebar template</h1>
+                        <h2>Sidebar template</h2>
                         <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
 
                     </div>
@@ -226,7 +228,7 @@
                 <hr>
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <h2>Themes</h2>
+                        <h3>Themes</h3>
                         <p>Here are more themes that you can use</p>
                     </div>
                 </div>
@@ -252,11 +254,8 @@
                     </div>
                 </div>
             </div>
-
-    </div>
-    </div>
-    </main>
-    <!-- page-content" -->
+        </main>
+        <!-- page-content" -->
     </div>
     <!-- page-wrapper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

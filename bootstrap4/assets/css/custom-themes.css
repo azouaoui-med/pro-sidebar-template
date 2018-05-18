@@ -34,12 +34,12 @@
     color: #ffffff;
 }
 
-.page-wrapper.chiller-theme.toggled #toggle-sidebar div {
-    background: #bdbdbd;
+.page-wrapper.chiller-theme.toggled #close-sidebar {
+    color: #bdbdbd;
 }
 
-.page-wrapper.chiller-theme.toggled #toggle-sidebar:hover div {
-    background: #ffffff;
+.page-wrapper.chiller-theme.toggled #close-sidebar:hover {
+    color: #ffffff;
 }
 
 .chiller-theme .sidebar-wrapper ul li:hover a i,
@@ -120,12 +120,12 @@
     color: #EFEFEF;
 }
 
-.page-wrapper.ice-theme.toggled #toggle-sidebar div {
-    background: #bdd4de;
+.page-wrapper.ice-theme.toggled #close-sidebar {
+    color: #bdd4de;
 }
 
-.page-wrapper.ice-theme.toggled #toggle-sidebar:hover div {
-    background: #EFEFEF;
+.page-wrapper.ice-theme.toggled #close-sidebar:hover {
+    color: #EFEFEF;
 }
 
 .ice-theme .sidebar-wrapper ul li:hover a i,
@@ -212,12 +212,12 @@
     color: #302F2C;
 }
 
-.page-wrapper.light-theme.toggled #toggle-sidebar div {
-    background: #74726E;
+.page-wrapper.light-theme.toggled #close-sidebar {
+    color: #74726E;
 }
 
-.page-wrapper.light-theme.toggled #toggle-sidebar:hover div {
-    background: #302F2C;
+.page-wrapper.light-theme.toggled #close-sidebar:hover {
+    color: #302F2C;
 }
 
 .light-theme .sidebar-wrapper ul li:hover a i,
@@ -302,12 +302,12 @@
     color: #b3b8c1;
 }
 
-.page-wrapper.cool-theme.toggled #toggle-sidebar div {
-    background: #918F9E;
+.page-wrapper.cool-theme.toggled #close-sidebar {
+    color: #918F9E;
 }
 
-.page-wrapper.cool-theme.toggled #toggle-sidebar:hover div {
-    background: #b3b8c1;
+.page-wrapper.cool-theme.toggled #close-sidebar:hover {
+    color: #b3b8c1;
 }
 
 .cool-theme .sidebar-wrapper ul li:hover a i,
@@ -389,12 +389,12 @@
     color: #ffffff;
 }
 
-.page-wrapper.green-theme.toggled #toggle-sidebar div {
-    background: #B0CC99;
+.page-wrapper.green-theme.toggled #close-sidebar {
+    color: #B0CC99;
 }
 
-.page-wrapper.green-theme.toggled #toggle-sidebar:hover div {
-    background: #ffffff;
+.page-wrapper.green-theme.toggled #close-sidebar:hover {
+    color: #ffffff;
 }
 
 .green-theme .sidebar-wrapper ul li:hover a i,
@@ -474,12 +474,12 @@
     color: #ffffff;
 }
 
-.page-wrapper.spicy-theme.toggled #toggle-sidebar div {
-    background: #f7d5a4;
+.page-wrapper.spicy-theme.toggled #close-sidebar {
+    color: #f7d5a4;
 }
 
-.page-wrapper.spicy-theme.toggled #toggle-sidebar:hover div {
-    background: #ffffff;
+.page-wrapper.spicy-theme.toggled #close-sidebar:hover {
+    color: #ffffff;
 }
 
 .spicy-theme .sidebar-wrapper ul li:hover a i,
@@ -558,12 +558,12 @@
     color: #FAEEFF;
 }
 
-.page-wrapper.purple-theme.toggled #toggle-sidebar div {
-    background: #F1BAF3;
+.page-wrapper.purple-theme.toggled #close-sidebar {
+    color: #F1BAF3;
 }
 
-.page-wrapper.purple-theme.toggled #toggle-sidebar:hover div {
-    background: #FAEEFF;
+.page-wrapper.purple-theme.toggled #close-sidebar:hover {
+    color: #FAEEFF;
 }
 
 .purple-theme .sidebar-wrapper ul li:hover a i,

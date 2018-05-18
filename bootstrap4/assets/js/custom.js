@@ -13,8 +13,11 @@ jQuery(function ($) {
 
     });
 
-    $("#toggle-sidebar").click(function () {
-        $(".page-wrapper").toggleClass("toggled");
+    $("#close-sidebar").click(function () {
+        $(".page-wrapper").removeClass("toggled");
+    });
+    $("#show-sidebar").click(function () {
+        $(".page-wrapper").addClass("toggled");
     });
     var themes = "chiller-theme ice-theme cool-theme light-theme green-theme spicy-theme purple-theme";
     $('[data-theme]').click(function () {
