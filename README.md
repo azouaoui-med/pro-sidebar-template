@@ -8,7 +8,7 @@ Responsive sidebar template with dropdown menu based on bootstrap framwork
 [Demo with bootstrap 4](https://azouaoui-med.github.io/pro-sidebar-template/bootstrap4)
 
 ## Screenshot
-![Screenshot](https://user-images.githubusercontent.com/25878302/34446998-7d568970-ece8-11e7-9ba5-deb3c03e72b6.PNG)
+![Screenshot](https://user-images.githubusercontent.com/25878302/40270934-22efa03a-5b96-11e8-9e2a-392531bad6b6.PNG)
 
 ## Resources
 *   [Bootstrap](https://getbootstrap.com/)
