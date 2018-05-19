@@ -38,9 +38,11 @@
         opacity: 0;
     }
 }
-body{
+
+body {
     font-size: .9rem;
 }
+
 .page-wrapper .sidebar-wrapper,
 .sidebar-wrapper .sidebar-brand>a,
 .sidebar-wrapper .sidebar-dropdown>a:after,
@@ -50,8 +52,8 @@ body{
 .sidebar-wrapper .sidebar-search input.search-menu,
 .sidebar-wrapper .sidebar-search .input-group-text,
 .sidebar-wrapper .sidebar-menu ul li a,
-#show-sidebar ,
-#close-sidebar  {
+#show-sidebar,
+#close-sidebar {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -112,7 +114,9 @@ body{
         padding-left: 300px;
     }
 }
+
 /*----------------show sidebar button----------------*/
+
 #show-sidebar {
     position: fixed;
     left: 0;
@@ -121,9 +125,11 @@ body{
     width: 35px;
     transition-delay: .3s;
 }
+
 .page-wrapper.toggled #show-sidebar {
     left: -40px;
 }
+
 /*----------------sidebar-wrapper----------------*/
 
 .sidebar-wrapper {
@@ -173,11 +179,11 @@ body{
     flex-grow: 1;
 }
 
-
-.sidebar-wrapper .sidebar-brand #close-sidebar {    
+.sidebar-wrapper .sidebar-brand #close-sidebar {
     cursor: pointer;
     font-size: 20px;
 }
+
 /*--------------------sidebar-header----------------------*/
 
 .sidebar-wrapper .sidebar-header {
@@ -265,10 +271,10 @@ body{
     animation: swing ease-in-out .5s 1 alternate;
 }
 
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown>a:after {   
-    font-family:"Font Awesome 5 Free";
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown>a:after {
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content:"\f105";
+    content: "\f105";
     font-style: normal;
     display: inline-block;
     font-style: normal;
@@ -294,7 +300,7 @@ body{
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
     content: "\f111";
-    font-family:"Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free";
     font-weight: 400;
     font-style: normal;
     display: inline-block;
@@ -337,15 +343,31 @@ body{
     display: flex;
 }
 
-.sidebar-footer>a {
+.sidebar-footer>div {
     flex-grow: 1;
     text-align: center;
     height: 30px;
     line-height: 30px;
-    position: relative;
+    position: static;
+    display: flex;
 }
 
-.sidebar-footer>a .notification {
+.sidebar-footer .dropdown-menu {
+    bottom: 31px;
+    left: 0 !important;
+    top: initial !important;
+    right: 0;
+    transform: none!important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: .9rem;
+}
+
+.sidebar-footer>div>a {
+    flex-grow: 1;
+}
+
+.sidebar-footer>div a .notification {
     position: absolute;
     top: 0;
 }
@@ -373,6 +395,64 @@ body{
     animation: sonar 1.5s infinite;
 }
 
+
+.sidebar-footer .messages .dropdown-item,
+.sidebar-footer .notifications .dropdown-item{
+    padding: .25rem 1rem;
+}
+.sidebar-footer .messages .messages-header,
+.sidebar-footer .notifications .notifications-header{
+    padding: 0 1rem;
+}
+.sidebar-footer .messages .message-content,
+.sidebar-footer .notifications .notification-content{
+    display: flex;
+}
+
+.sidebar-footer .messages .message-content .pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.sidebar-footer .notifications .notification-content .icon{
+    width: 40px;
+    height: 40px;
+}
+.sidebar-footer .notifications .notification-content .icon i{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 4px;
+}
+
+.sidebar-footer .messages .message-content .pic img{
+    object-fit: cover;
+    height: 100%;
+}
+.sidebar-footer .notifications .notification-content .content,
+.sidebar-footer .messages .message-content .content{
+    line-height: 1.6;
+    padding-left: 5px;
+    width: calc(100% - 40px);
+}
+.sidebar-footer .messages .message-content .content .message-title{
+    font-size: 13px;
+}
+
+.sidebar-footer .notifications .notification-content .content .notification-time{
+    font-size: .7rem;
+    color: #828282;
+}
+
+.sidebar-footer .notifications .notification-content .content .notification-detail,
+.sidebar-footer .messages .message-content .content .message-detail{
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /*--------------------------page-content-----------------------------*/
 
 .page-wrapper .page-content {
