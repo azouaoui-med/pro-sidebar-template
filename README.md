@@ -11,7 +11,7 @@ Responsive sidebar template with dropdown menu based on bootstrap framwork
 
 
 ## Screenshot
-![Screenshot](https://user-images.githubusercontent.com/25878302/41426873-586a2a40-7005-11e8-890f-05b4f0fc5907.PNG)
+![sidebar](https://user-images.githubusercontent.com/25878302/41426873-586a2a40-7005-11e8-890f-05b4f0fc5907.PNG)
 
 
 ## Resources
