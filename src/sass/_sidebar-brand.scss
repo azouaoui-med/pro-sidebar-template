@@ -1,0 +1,17 @@
+.sidebar-brand {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+
+    >a {
+        text-transform: uppercase;
+        font-weight: bold;
+        flex-grow: 1;
+    }
+
+    #close-sidebar {
+        cursor: pointer;
+        font-size: 20px;
+        transition: color .3s ease;
+    }
+}

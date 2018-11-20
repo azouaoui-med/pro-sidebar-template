@@ -1,0 +1,27 @@
+{
+  "name": "pro-sidebar-template",
+  "version": "1.0.0",
+  "description": "Responsive sidebar template with dropdown menu based on bootstrap framwork",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azouaoui-med/pro-sidebar-template.git"
+  },
+  "keywords": [],
+  "author": "Azouaoui Mohamed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azouaoui-med/pro-sidebar-template/issues"
+  },
+  "homepage": "https://github.com/azouaoui-med/pro-sidebar-template#readme"
+}

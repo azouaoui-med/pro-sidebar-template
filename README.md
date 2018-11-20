@@ -1,18 +1,25 @@
 
  # Pro sidebar template
+
 Responsive sidebar template with dropdown menu based on bootstrap framwork
 
 ## Demo
 
-[See it live](https://azouaoui-med.github.io/pro-sidebar-template/bootstrap4)
-
- A version built with bootstrap 3 is also available, See demo [here](https://azouaoui-med.github.io/pro-sidebar-template/bootstrap3)
-
-
+[See it live](https://azouaoui-med.github.io/pro-sidebar-template/src)
 
 ## Screenshot
-![sidebar](https://user-images.githubusercontent.com/25878302/41426873-586a2a40-7005-11e8-890f-05b4f0fc5907.PNG)
 
+![sidebar](https://user-images.githubusercontent.com/25878302/48797728-4b5ef800-ed03-11e8-98ea-093e77e8976d.PNG)
+
+## Quick start
+
+```
+npm install 
+
+npm start
+```
+
+ Server runs on http://localhost:3000
 
 ## Resources
 *   [Bootstrap](https://getbootstrap.com/)

@@ -1,0 +1,101 @@
+.sidebar-menu {
+    padding-bottom: 10px;
+
+    .header-menu span {
+        font-weight: bold;
+        font-size: 14px;
+        padding: 15px 20px 5px 20px;
+        display: inline-block;
+    }
+
+    ul li a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        position: relative;
+        padding: 8px 30px 8px 20px;       
+
+        i {
+            margin-right: 10px;
+            font-size: 12px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        &:hover>i::before {
+            display: inline-block;
+            animation: swing ease-in-out .5s 1 alternate;
+        }
+
+        span.label,
+        span.badge {
+            float: right;
+            margin-top: 8px;
+            margin-left: 5px;
+        }
+    }
+
+    .sidebar-dropdown {
+        >a:after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f105";
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: center;
+            background: 0 0;
+            position: absolute;
+            right: 15px;
+            top: 14px;
+            transition: transform .3s ease;
+
+        }
+        
+        .sidebar-submenu {
+            display: none;
+
+            ul {
+                padding: 5px 0;
+            }
+
+            li {
+                padding-left: 25px;
+                font-size: 13px;
+
+                a {
+                    &:before {
+                        content: "\f111";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 400;
+                        font-style: normal;
+                        display: inline-block;
+                        text-align: center;
+                        text-decoration: none;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        margin-right: 10px;
+                        font-size: 8px;
+                    }
+
+                    .badge,
+                    .label {
+                        float: right;
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+        &.active>a:after {
+            transform: rotate(90deg);
+            right: 17px;
+        }
+    }
+
+}

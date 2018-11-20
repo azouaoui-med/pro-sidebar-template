@@ -1,0 +1,142 @@
+/*-----------------------------chiller-theme---------------------------------*/
+
+
+$bg-sidebar-wrapper : #1d1d1d;
+$border-color : #2b2b2b;
+$footer-top-border-color :#3a3a3a;
+$color:#bdbdbd;
+$header-menu-color :#6c7b88;
+$hover-color:#ffffff;
+$shadow-color:#131212;
+$bg-scrollbar :#636363;
+
+// colors with backgound image
+$img-bg-sidebar-wrapper : rgba(29, 29, 29, 0.8);
+$img-border-color : rgba(255, 255, 255, 0.1);
+$img-bg-footer :rgba(43, 43, 43, 0.5);
+$img-shadow-color:rgba(0, 0, 0, 0.5);
+
+
+.chiller-theme {
+    .sidebar-wrapper {
+
+        background-color: $bg-sidebar-wrapper;
+
+        .sidebar-header,
+        .sidebar-search,
+        .sidebar-menu {
+            border-top: 1px solid $border-color;
+        }
+
+        .sidebar-search input.search-menu,
+        .sidebar-search .input-group-text {
+            border-color: $border-color;
+            box-shadow: none;
+        }
+
+        .sidebar-header .user-info .user-role,
+        .sidebar-header .user-info .user-status,
+        .sidebar-search input.search-menu,
+        .sidebar-search .input-group-text,
+        .sidebar-brand>a,
+        .sidebar-menu ul li a,
+        .sidebar-footer>div>a {
+            color: $color;
+        }
+
+        .sidebar-menu ul li:hover>a,
+        .sidebar-menu .sidebar-dropdown.active>a,
+        .sidebar-header .user-info,
+        .sidebar-brand>a:hover,
+        .sidebar-footer>div>a:hover i {
+            color: $hover-color;
+        }
+
+        ul li:hover a i,
+        .sidebar-dropdown .sidebar-submenu li a:hover:before,
+        .sidebar-search input.search-menu:focus+span,
+        .sidebar-menu .sidebar-dropdown.active a i {
+            color: $hover-color;
+        }
+
+        .sidebar-menu ul li a i,
+        .sidebar-menu .sidebar-dropdown div,
+        .sidebar-search input.search-menu,
+        .sidebar-search .input-group-text {
+            background-color: $border-color;
+            border: none;
+            margin-left: 1px;
+        }
+
+        .sidebar-menu .header-menu span {
+            color: $header-menu-color;
+        }
+
+        .sidebar-footer {
+            background-color: $border-color;
+            box-shadow: 0px -1px 5px $shadow-color;
+            border-top: 1px solid $footer-top-border-color;
+        }
+
+        .sidebar-footer>div:first-child {
+            border-left: none;
+        }
+
+        .sidebar-footer>div:last-child {
+            border-right: none;
+        }
+    }
+
+    &.toggled #close-sidebar {
+        color: $color;
+    }
+
+    &.toggled #close-sidebar:hover {
+        color: $hover-color;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+    .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+    .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+        background-color: $bg-scrollbar;
+    }
+
+    .mCSB_scrollTools .mCSB_draggerRail {
+        background-color: transparent;
+    }
+
+    &.sidebar-bg {
+
+        .sidebar-wrapper {
+            &:before {
+                background-color: $img-bg-sidebar-wrapper;
+            }
+
+            .sidebar-header,
+            .sidebar-search,
+            .sidebar-menu {
+                border-top: 1px solid $img-border-color;
+            }
+
+            .sidebar-search input.search-menu,
+            .sidebar-search .input-group-text {
+                border-color: $img-border-color;
+                box-shadow: none;
+            }
+
+            .sidebar-menu ul li a i,
+            .sidebar-menu .sidebar-dropdown div,
+            .sidebar-search input.search-menu,
+            .sidebar-search .input-group-text {
+                background-color: $img-border-color;
+
+            }
+
+            .sidebar-footer {
+                background-color: $img-bg-footer;
+                box-shadow: 0px -1px 5px $img-bg-footer;
+                border-top: 1px solid $img-border-color;
+            }
+        }
+    }
+}
