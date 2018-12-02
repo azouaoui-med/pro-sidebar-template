@@ -16,7 +16,7 @@ gulp.task('sass', function () {
 gulp.task('serve', function() {
 
   browserSync.init({
-      server: "./src"
+      server: ["./","./src"]
   });
 
   gulp.watch("./src/sass/**/*.scss", gulp.series('sass'));
