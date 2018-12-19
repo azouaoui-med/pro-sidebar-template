@@ -3,6 +3,8 @@
 
 Responsive sidebar template with dropdown menu based on bootstrap framwork
 
+If you are looking for a version built with angular, then you should checkout the [Angular Pro Sidebar](https://github.com/azouaoui-med/angular-pro-sidebar) template
+
 ## Demo
 
 [See it live](https://azouaoui-med.github.io/pro-sidebar-template/src)

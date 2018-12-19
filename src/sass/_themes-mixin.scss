@@ -1,28 +1,8 @@
-/*-----------------------------light-theme---------------------------------*/
-
-
-$bg-sidebar-wrapper : #F1F0ED;
-$border-color : #ffffff;
-$footer-top-border-color :#A4A29E;
-$color:#74726E;
-$header-menu-color :#6c7b88;
-$hover-color:#302F2C;
-$hover-icon-color:#00a9fd;
-$shadow-color:transparent;
-$bg-scrollbar :#A4A29E;
-
-// colors with backgound image
-$img-bg-sidebar-wrapper : rgba(241, 240, 237, 0.8);
-$img-border-color : rgba(255, 255, 255, 0.5);
-$img-bg-footer :rgba(255, 255, 255, 0.5);
-$img-shadow-color:rgba(0, 0, 0, 0.5);
-
-
-.light-theme {
+@mixin themes($bg-sidebar-wrapper,$border-color,$footer-top-border-color,$color,$header-menu-color,$hover-color,$shadow-color,$bg-scrollbar) {
     .sidebar-wrapper {
 
         background-color: $bg-sidebar-wrapper;
-        border-right: 1px solid $bg-sidebar-wrapper;
+
         .sidebar-header,
         .sidebar-search,
         .sidebar-menu {
@@ -57,7 +37,7 @@ $img-shadow-color:rgba(0, 0, 0, 0.5);
         .sidebar-dropdown .sidebar-submenu li a:hover:before,
         .sidebar-search input.search-menu:focus+span,
         .sidebar-menu .sidebar-dropdown.active a i {
-            color: $hover-icon-color;
+            color: $hover-color;
         }
 
         .sidebar-menu ul li a i,
@@ -76,6 +56,7 @@ $img-shadow-color:rgba(0, 0, 0, 0.5);
         .sidebar-footer {
             background-color: $border-color;
             box-shadow: 0px -1px 5px $shadow-color;
+            border-top: 1px solid $footer-top-border-color;
         }
 
         .sidebar-footer>div:first-child {
@@ -87,7 +68,7 @@ $img-shadow-color:rgba(0, 0, 0, 0.5);
         }
     }
 
-    &.toggled #close-sidebar {        
+    &.toggled #close-sidebar {
         color: $color;
     }
 
@@ -104,6 +85,9 @@ $img-shadow-color:rgba(0, 0, 0, 0.5);
     .mCSB_scrollTools .mCSB_draggerRail {
         background-color: transparent;
     }
+  }
+
+  @mixin themesBg($img-bg-sidebar-wrapper,$img-border-color,$img-bg-footer,$img-shadow-color) {
 
     &.sidebar-bg {
 
@@ -139,4 +123,6 @@ $img-shadow-color:rgba(0, 0, 0, 0.5);
             }
         }
     }
-}
+
+
+  }

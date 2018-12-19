@@ -1,4 +1,80 @@
-@import './theme-chiller';
-@import './theme-ice';
-@import './theme-cool';
-@import './theme-light';
+@import "./themes-mixin";
+
+.chiller-theme {
+    $bg-sidebar-wrapper: #1d1d1d;
+    $border-color: #2b2b2b;
+    $footer-top-border-color: #3a3a3a;
+    $color: #bdbdbd;
+    $header-menu-color: #6c7b88;
+    $hover-color: #ffffff;
+    $shadow-color: #131212;
+    $bg-scrollbar: #636363;
+    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
+    
+    // colors with backgound image
+    $img-bg-sidebar-wrapper: rgba(29, 29, 29, 0.8);
+    $img-border-color: rgba(255, 255, 255, 0.1);
+    $img-bg-footer: rgba(43, 43, 43, 0.5);
+    $img-shadow-color: rgba(0, 0, 0, 0.5);
+
+    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+}
+
+.cool-theme {
+    $bg-sidebar-wrapper: #38373D;
+    $border-color: #504E57;
+    $footer-top-border-color: #5B5963;
+    $color: #918F9E;
+    $header-menu-color: #5B5963;
+    $hover-color: #b3b8c1;
+    $hover-icon-color: #ff7bdb;
+    $shadow-color: #2a292d;
+    $bg-scrollbar: #918F9E;
+    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
+
+    // colors with backgound image
+    $img-bg-sidebar-wrapper: rgba(47, 47, 47, 0.8);
+    $img-border-color: rgba(95, 95, 95, 0.5);
+    $img-bg-footer: rgba(80, 78, 87, 0.5);
+    $img-shadow-color: rgba(0, 0, 0, 0.5);
+    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+}
+
+.ice-theme {
+    $bg-sidebar-wrapper: #2B3A42;
+    $border-color: #3a4d56;
+    $footer-top-border-color: #495d67;
+    $color: #bdd4de;
+    $header-menu-color: #6c7b88;
+    $hover-color: #EFEFEF;
+    $shadow-color: transparent;
+    $bg-scrollbar: #8998a5;
+    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
+
+    // colors with backgound image
+    $img-bg-sidebar-wrapper: rgba(2, 19, 25, 0.8);
+    $img-border-color: rgba(58, 77, 86, 0.5);
+    $img-bg-footer: rgba(58, 77, 86, 0.3);
+    $img-shadow-color: rgba(73, 93, 103, 0.3);
+    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+}
+
+.light-theme {
+    $bg-sidebar-wrapper: #F1F0ED;
+    $border-color: #ffffff;
+    $footer-top-border-color: #A4A29E;
+    $color: #74726E;
+    $header-menu-color: #6c7b88;
+    $hover-color: #302F2C;
+    $hover-icon-color: #00a9fd;
+    $shadow-color: transparent;
+    $bg-scrollbar: #A4A29E;
+    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
+
+    // colors with backgound image
+    $img-bg-sidebar-wrapper: rgba(241, 240, 237, 0.8);
+    $img-border-color: rgba(255, 255, 255, 0.5);
+    $img-bg-footer: rgba(255, 255, 255, 0.5);
+    $img-shadow-color: rgba(0, 0, 0, 0.5);
+    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+}
