@@ -1,42 +1,26 @@
-@mixin themes($bg-sidebar-wrapper,$border-color,$footer-top-border-color,$color,$header-menu-color,$hover-color,$shadow-color,$bg-scrollbar) {
+@mixin themes($sidebar-bg-color, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar) {
     .sidebar-wrapper {
 
-        background-color: $bg-sidebar-wrapper;
+        background-color: $sidebar-bg-color;
 
-        .sidebar-header,
-        .sidebar-search,
-        .sidebar-menu {
+        .sidebar-item {
+
             border-top: 1px solid $border-color;
+
+            &:first-child {
+                border-top: none;
+            }
         }
 
-        .sidebar-search input.search-menu,
-        .sidebar-search .input-group-text {
-            border-color: $border-color;
-            box-shadow: none;
-        }
-
-        .sidebar-header .user-info .user-role,
-        .sidebar-header .user-info .user-status,
-        .sidebar-search input.search-menu,
-        .sidebar-search .input-group-text,
-        .sidebar-brand>a,
-        .sidebar-menu ul li a,
-        .sidebar-footer>div>a {
+        a:not(.dropdown-item),
+        .sidebar-header,
+        .sidebar-search input,
+        .sidebar-search i {
             color: $color;
         }
-
-        .sidebar-menu ul li:hover>a,
-        .sidebar-menu .sidebar-dropdown.active>a,
-        .sidebar-header .user-info,
-        .sidebar-brand>a:hover,
-        .sidebar-footer>div>a:hover i {
-            color: $hover-color;
-        }
-
-        ul li:hover a i,
-        .sidebar-dropdown .sidebar-submenu li a:hover:before,
-        .sidebar-search input.search-menu:focus+span,
-        .sidebar-menu .sidebar-dropdown.active a i {
+        
+        a:hover,
+        .sidebar-menu li.active>a{
             color: $hover-color;
         }
 
@@ -85,9 +69,9 @@
     .mCSB_scrollTools .mCSB_draggerRail {
         background-color: transparent;
     }
-  }
+}
 
-  @mixin themesBg($img-bg-sidebar-wrapper,$img-border-color,$img-bg-footer,$img-shadow-color) {
+@mixin themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color) {
 
     &.sidebar-bg {
 
@@ -96,10 +80,10 @@
                 background-color: $img-bg-sidebar-wrapper;
             }
 
-            .sidebar-header,
-            .sidebar-search,
-            .sidebar-menu {
-                border-top: 1px solid $img-border-color;
+            .sidebar-item{
+
+                border-color: $img-border-color;
+    
             }
 
             .sidebar-search input.search-menu,
@@ -125,4 +109,4 @@
     }
 
 
-  }
+}
