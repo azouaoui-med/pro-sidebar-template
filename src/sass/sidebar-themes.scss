@@ -16,7 +16,7 @@
     $shadow-color: #1d1d1d;
     $scrollbar-color: #525965;
 
-    @include themes2($sidebar-bg-color,
+    @include themes($sidebar-bg-color,
     $primary-color,
     $primary-highlight-color,
     $border-color,
@@ -28,7 +28,7 @@
     $search-input-bg-color,
     $footer-bg-color,
     $shadow-color,
-    $scrollbar-color);
+    $scrollbar-color);    
 
 }
 
@@ -48,7 +48,7 @@
     $shadow-color: #2A2C2B;
     $scrollbar-color: #525965;
 
-    @include themes2($sidebar-bg-color,
+    @include themes($sidebar-bg-color,
     $primary-color,
     $primary-highlight-color,
     $border-color,
@@ -80,7 +80,7 @@
     $shadow-color: #16191f;
     $scrollbar-color: #525965;
 
-    @include themes2($sidebar-bg-color,
+    @include themes($sidebar-bg-color,
     $primary-color,
     $primary-highlight-color,
     $border-color,
@@ -113,7 +113,7 @@
     $shadow-color: #2a292d;
     $scrollbar-color: #918F9E;
 
-    @include themes2($sidebar-bg-color,
+    @include themes($sidebar-bg-color,
     $primary-color,
     $primary-highlight-color,
     $border-color,
@@ -146,7 +146,7 @@
     $shadow-color: #2b3a42;
     $scrollbar-color: #8998a5;
 
-    @include themes2($sidebar-bg-color,
+    @include themes($sidebar-bg-color,
     $primary-color,
     $primary-highlight-color,
     $border-color,
@@ -178,7 +178,7 @@
     $shadow-color: #ececec;
     $scrollbar-color: #A4A29E;
 
-    @include themes2($sidebar-bg-color,
+    @include themes($sidebar-bg-color,
     $primary-color,
     $primary-highlight-color,
     $border-color,
