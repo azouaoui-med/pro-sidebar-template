@@ -1,28 +1,78 @@
-@keyframes swing {
+@-webkit-keyframes swing {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   10% {
+    -webkit-transform: rotate(10deg);
     transform: rotate(10deg); }
   30% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   40% {
+    -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg); }
   50% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   60% {
+    -webkit-transform: rotate(5deg);
     transform: rotate(5deg); }
   70% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   80% {
+    -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg); }
   100% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
 
-@keyframes sonar {
+@keyframes swing {
   0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  10% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  30% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  40% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  70% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@-webkit-keyframes sonar {
+  0% {
+    -webkit-transform: scale(0.9);
     transform: scale(0.9);
     opacity: 1; }
   100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0; } }
+
+@keyframes sonar {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(2);
     transform: scale(2);
     opacity: 0; } }
 
@@ -37,6 +87,7 @@ body {
   top: 0;
   left: -300px;
   z-index: 999;
+  -webkit-transition: left .3s ease;
   transition: left .3s ease; }
   .sidebar-wrapper ul {
     list-style-type: none;
@@ -44,6 +95,7 @@ body {
     margin: 0; }
   .sidebar-wrapper a {
     text-decoration: none;
+    -webkit-transition: color .3s ease;
     transition: color .3s ease; }
   .sidebar-wrapper .sidebar-content {
     max-height: calc(100% - 30px);
@@ -54,15 +106,22 @@ body {
       overflow-y: hidden; }
   .sidebar-wrapper .sidebar-brand {
     padding: 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     .sidebar-wrapper .sidebar-brand > a {
       text-transform: uppercase;
       font-weight: bold;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
       flex-grow: 1; }
     .sidebar-wrapper .sidebar-brand #close-sidebar {
       cursor: pointer;
       font-size: 20px;
+      -webkit-transition: color .3s ease;
       transition: color .3s ease; }
   .sidebar-wrapper .sidebar-header {
     padding: 20px;
@@ -75,6 +134,7 @@ body {
       margin-right: 15px;
       overflow: hidden; }
       .sidebar-wrapper .sidebar-header .user-pic img {
+        -o-object-fit: cover;
         object-fit: cover;
         height: 100%;
         width: 100%; }
@@ -118,6 +178,7 @@ body {
         border-radius: 4px; }
       .sidebar-wrapper .sidebar-menu ul li a:hover > i::before {
         display: inline-block;
+        -webkit-animation: swing ease-in-out .5s 1 alternate;
         animation: swing ease-in-out .5s 1 alternate; }
       .sidebar-wrapper .sidebar-menu ul li a span.label,
       .sidebar-wrapper .sidebar-menu ul li a span.badge {
@@ -139,7 +200,10 @@ body {
       position: absolute;
       right: 15px;
       top: 14px;
-      transition: transform .3s ease; }
+      -webkit-transition: -webkit-transform .3s ease;
+      transition: -webkit-transform .3s ease;
+      transition: transform .3s ease;
+      transition: transform .3s ease, -webkit-transform .3s ease; }
     .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu {
       display: none; }
       .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
@@ -164,21 +228,30 @@ body {
           float: right;
           margin-top: 0px; }
     .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
+      -webkit-transform: rotate(90deg);
       transform: rotate(90deg);
-      right: 17px; }
+      right: 15px; }
   .sidebar-wrapper .sidebar-footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .sidebar-wrapper .sidebar-footer > div {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
       flex-grow: 1;
       text-align: center;
       height: 30px;
       line-height: 30px;
       position: static;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       .sidebar-wrapper .sidebar-footer > div > a {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1; }
       .sidebar-wrapper .sidebar-footer > div a .notification {
         position: absolute;
@@ -188,6 +261,7 @@ body {
       left: 0 !important;
       top: initial !important;
       right: 0;
+      -webkit-transform: none !important;
       transform: none !important;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -197,6 +271,8 @@ body {
     .sidebar-wrapper .sidebar-footer .messages .messages-header {
       padding: 0 1rem; }
     .sidebar-wrapper .sidebar-footer .messages .message-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       .sidebar-wrapper .sidebar-footer .messages .message-content .pic {
         width: 40px;
@@ -204,6 +280,7 @@ body {
         border-radius: 4px;
         overflow: hidden; }
         .sidebar-wrapper .sidebar-footer .messages .message-content .pic img {
+          -o-object-fit: cover;
           object-fit: cover;
           height: 100%; }
       .sidebar-wrapper .sidebar-footer .messages .message-content .content {
@@ -222,6 +299,8 @@ body {
     .sidebar-wrapper .sidebar-footer .notifications .notifications-header {
       padding: 0 1rem; }
     .sidebar-wrapper .sidebar-footer .notifications .notification-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; }
       .sidebar-wrapper .sidebar-footer .notifications .notification-content .icon {
         width: 40px;
@@ -262,6 +341,7 @@ body {
         border-radius: 50%;
         width: 100%;
         height: 100%;
+        -webkit-animation: sonar 1.5s infinite;
         animation: sonar 1.5s infinite; }
 
 .sidebar-bg .sidebar-wrapper {
@@ -291,17 +371,23 @@ body {
 .page-wrapper .theme.selected {
   border: 2px solid #00c7ff; }
 
-.page-wrapper .theme.chiller-theme {
+.page-wrapper .theme.default-theme {
   background: #1d1d1d; }
 
-.page-wrapper .theme.ice-theme {
-  background: #2B3A42; }
+.page-wrapper .theme.chiller-theme {
+  background: #374140; }
 
-.page-wrapper .theme.light-theme {
-  background: #F1F0ED; }
+.page-wrapper .theme.legacy-theme {
+  background: #2e333c; }
+
+.page-wrapper .theme.ice-theme {
+  background: #3a4d56; }
 
 .page-wrapper .theme.cool-theme {
-  background: #38373D; }
+  background: #46454c; }
+
+.page-wrapper .theme.light-theme {
+  background: #ececec; }
 
 /*----------------  toggeled sidebar  ----------------*/
 .page-wrapper.toggled .sidebar-wrapper {
@@ -318,7 +404,9 @@ body {
   top: 10px;
   border-radius: 0 4px 4px 0px;
   width: 35px;
+  -webkit-transition: left .3s ease;
   transition: left .3s ease;
+  -webkit-transition-delay: .3s;
   transition-delay: .3s; }
 
 .page-wrapper.toggled #show-sidebar {
@@ -330,6 +418,7 @@ body {
   width: 100%;
   padding-left: 0px;
   padding-top: 20px;
+  -webkit-transition: padding-left .3s ease;
   transition: padding-left .3s ease; }
 
 .page-wrapper .page-content > div {

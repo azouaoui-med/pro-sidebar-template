@@ -25,7 +25,7 @@ jQuery(function ($) {
     });
 
     //switch between themes 
-    var themes = "chiller-theme ice-theme cool-theme light-theme";
+    var themes = "default-theme legacy-theme chiller-theme ice-theme cool-theme light-theme";
     $('[data-theme]').click(function () {
         $('[data-theme]').removeClass("selected");
         $(this).addClass("selected");

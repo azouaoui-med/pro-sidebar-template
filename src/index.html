@@ -9,7 +9,7 @@
     <title>Sidebar template</title>
 
     <!-- using online links -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <div class="page-wrapper chiller-theme sidebar-bg bg1 toggled">
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
         <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
             <i class="fas fa-bars"></i>
         </a>
@@ -78,7 +78,7 @@
                             <a href="#">
                                 <i class="fa fa-tachometer-alt"></i>
                                 <span>Dashboard</span>
-                                <span class="badge badge-pill badge-danger">New</span>
+                                <span class="badge badge-pill badge-warning">New</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -100,7 +100,7 @@
                             <a href="#">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>E-commerce</span>
-                                <span class="badge badge-pill badge-primary">3</span>
+                                <span class="badge badge-pill badge-danger">3</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -186,6 +186,13 @@
                         </li>
                         <li>
                             <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span>Documentation</span>
+                                <span class="badge badge-pill badge-primary">Beta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
                                 <i class="fa fa-calendar"></i>
                                 <span>Calendar</span>
                             </a>
@@ -194,12 +201,6 @@
                             <a href="#">
                                 <i class="fa fa-folder"></i>
                                 <span>Examples</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-book"></i>
-                                <span>Documentation</span>
                             </a>
                         </li>
                     </ul>
@@ -364,7 +365,9 @@
 
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                        <a href="#" data-theme="default-theme" class="theme default-theme selected"></a>
+                        <a href="#" data-theme="chiller-theme" class="theme chiller-theme"></a>
+                        <a href="#" data-theme="legacy-theme" class="theme legacy-theme"></a>
                         <a href="#" data-theme="ice-theme" class="theme ice-theme"></a>
                         <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
                         <a href="#" data-theme="light-theme" class="theme light-theme"></a>
@@ -379,11 +382,9 @@
                         <a href="#" data-bg="bg4" class="theme theme-bg"></a>
                     </div>
                     <div class="form-group col-md-12">
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="" id="toggle-bg" checked>
-                                Background image
-                            </label>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="toggle-bg" checked>
+                            <label class="custom-control-label" for="toggle-bg">Background image</label>
                         </div>
                     </div>
 
@@ -392,13 +393,14 @@
                 <hr>
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <a href="https://github.com/azouaoui-med/pro-sidebar-template" class="btn btn-dark" target="_blank">
+                        <a href="https://github.com/azouaoui-med/pro-sidebar-template" class="btn btn-primary" target="_blank">
                             <i class="fab fa-github"></i> View source</a>
-                        <a href="https://github.com/azouaoui-med/pro-sidebar-template/archive/gh-pages.zip" class="btn btn-outline-dark"
+                        <a href="https://github.com/azouaoui-med/pro-sidebar-template/archive/gh-pages.zip" class="btn btn-outline-primary"
                             target="_blank">
                             <i class="fa fa-download"></i> Download</a>
                     </div>
                 </div>
+                <hr>
             </div>
         </main>
         <!-- page-content" -->
@@ -407,9 +409,9 @@
 
     <!-- using online scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 

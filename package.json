@@ -13,6 +13,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.10.0"
   },

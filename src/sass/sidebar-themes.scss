@@ -1,80 +1,195 @@
-@import "./themes-mixin";
+@import "./mixin";
+
+.default-theme {
+
+    $sidebar-bg-color: #1d1d1d;
+    $primary-color: #adadad;
+    $primary-highlight-color: #d8d8d8;
+    $border-color: #2b2b2b;
+    $submenu-bg-color: #2b2b2b;
+    $menu-icon-bg-color: #2b2b2b;
+    $menu-icon-color: #818896;
+    $menu-icon-highlight-color: #22ff16;
+    $menu-header-color: #868686;
+    $search-input-bg-color: #2b2b2b;
+    $footer-bg-color: #2b2b2b;
+    $shadow-color: #1d1d1d;
+    $scrollbar-color: #525965;
+
+    @include themes2($sidebar-bg-color,
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color);
+
+}
 
 .chiller-theme {
-    $bg-sidebar-wrapper: #1d1d1d;
-    $border-color: #2b2b2b;
-    $footer-top-border-color: #3a3a3a;
-    $color: #bdbdbd;
-    $header-menu-color: #6c7b88;
-    $hover-color: #ffffff;
-    $shadow-color: #131212;
-    $bg-scrollbar: #636363;
-    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
-    
-    // colors with backgound image
-    $img-bg-sidebar-wrapper: rgba(29, 29, 29, 0.8);
-    $img-border-color: rgba(255, 255, 255, 0.1);
-    $img-bg-footer: rgba(43, 43, 43, 0.5);
-    $img-shadow-color: rgba(0, 0, 0, 0.5);
 
-    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+    $sidebar-bg-color: #2A2C2B;
+    $primary-color: #D9CB9E;
+    $primary-highlight-color: #ffe79a;
+    $border-color: #374140;
+    $submenu-bg-color: #374140;
+    $menu-icon-bg-color: #374140;
+    $menu-icon-color: #D9CB9E;
+    $menu-icon-highlight-color: #ffbe00;
+    $menu-header-color: #a29464;
+    $search-input-bg-color: #374140;
+    $footer-bg-color: #374140;
+    $shadow-color: #2A2C2B;
+    $scrollbar-color: #525965;
+
+    @include themes2($sidebar-bg-color,
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color);
+
 }
+
+.legacy-theme {
+
+    $sidebar-bg-color: #1e2229;
+    $primary-color: #818896;
+    $primary-highlight-color: #b8bfce;
+    $border-color: #2e333c;
+    $submenu-bg-color: #2e333c;
+    $menu-icon-bg-color: #2e333c;
+    $menu-icon-color: #818896;
+    $menu-icon-highlight-color: #16c7ff;
+    $menu-header-color: #646e80;
+    $search-input-bg-color: #2e333c;
+    $footer-bg-color: #22262d;
+    $shadow-color: #16191f;
+    $scrollbar-color: #525965;
+
+    @include themes2($sidebar-bg-color,
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color);
+
+}
+
 
 .cool-theme {
-    $bg-sidebar-wrapper: #38373D;
-    $border-color: #504E57;
-    $footer-top-border-color: #5B5963;
-    $color: #918F9E;
-    $header-menu-color: #5B5963;
-    $hover-color: #b3b8c1;
-    $hover-icon-color: #ff7bdb;
-    $shadow-color: #2a292d;
-    $bg-scrollbar: #918F9E;
-    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
 
-    // colors with backgound image
-    $img-bg-sidebar-wrapper: rgba(47, 47, 47, 0.8);
-    $img-border-color: rgba(95, 95, 95, 0.5);
-    $img-bg-footer: rgba(80, 78, 87, 0.5);
-    $img-shadow-color: rgba(0, 0, 0, 0.5);
-    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+    $sidebar-bg-color: #38373D;
+    $primary-color: #918F9E;
+    $primary-highlight-color: #b3b8c1;
+    $border-color: #46454c;
+    $submenu-bg-color: #46454c;
+    $menu-icon-bg-color: #46454c;
+    $menu-icon-color: #918F9E;
+    $menu-icon-highlight-color: #fe6fff;
+    $menu-header-color: #747479;
+    $search-input-bg-color: #46454c;
+    $footer-bg-color: #414046;
+    $shadow-color: #2a292d;
+    $scrollbar-color: #918F9E;
+
+    @include themes2($sidebar-bg-color,
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color);
+
 }
 
-.ice-theme {
-    $bg-sidebar-wrapper: #2B3A42;
-    $border-color: #3a4d56;
-    $footer-top-border-color: #495d67;
-    $color: #bdd4de;
-    $header-menu-color: #6c7b88;
-    $hover-color: #EFEFEF;
-    $shadow-color: transparent;
-    $bg-scrollbar: #8998a5;
-    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
 
-    // colors with backgound image
-    $img-bg-sidebar-wrapper: rgba(2, 19, 25, 0.8);
-    $img-border-color: rgba(58, 77, 86, 0.5);
-    $img-bg-footer: rgba(58, 77, 86, 0.3);
-    $img-shadow-color: rgba(73, 93, 103, 0.3);
-    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+.ice-theme {
+
+    $sidebar-bg-color: #2B3A42;
+    $primary-color: #9eb7c3;
+    $primary-highlight-color: #EFEFEF;
+    $border-color: #3a4d56;
+    $submenu-bg-color: #3a4d56;
+    $menu-icon-bg-color: #3a4d56;
+    $menu-icon-color: #bdd4de;
+    $menu-icon-highlight-color: #38fbc7;
+    $menu-header-color: #6c7b88;
+    $search-input-bg-color: #3a4d56;
+    $footer-bg-color: #2f3f48;
+    $shadow-color: #2b3a42;
+    $scrollbar-color: #8998a5;
+
+    @include themes2($sidebar-bg-color,
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color);
+
 }
 
 .light-theme {
-    $bg-sidebar-wrapper: #F1F0ED;
-    $border-color: #ffffff;
-    $footer-top-border-color: #A4A29E;
-    $color: #74726E;
-    $header-menu-color: #6c7b88;
-    $hover-color: #302F2C;
-    $hover-icon-color: #00a9fd;
-    $shadow-color: transparent;
-    $bg-scrollbar: #A4A29E;
-    @include themes($bg-sidebar-wrapper, $border-color, $footer-top-border-color, $color, $header-menu-color, $hover-color, $shadow-color, $bg-scrollbar);
 
-    // colors with backgound image
-    $img-bg-sidebar-wrapper: rgba(241, 240, 237, 0.8);
-    $img-border-color: rgba(255, 255, 255, 0.5);
-    $img-bg-footer: rgba(255, 255, 255, 0.5);
-    $img-shadow-color: rgba(0, 0, 0, 0.5);
-    @include themesBg($img-bg-sidebar-wrapper, $img-border-color, $img-bg-footer, $img-shadow-color);
+    $sidebar-bg-color: #ececec;
+    $primary-color: #74726E;
+    $primary-highlight-color: #424242;
+    $border-color: #f9f9f9;
+    $submenu-bg-color: #f9f9f9;
+    $menu-icon-bg-color: #f9f9f9;
+    $menu-icon-color: #bdd4de;
+    $menu-icon-highlight-color: #00a9fd;
+    $menu-header-color: #6c7b88;
+    $search-input-bg-color: #f9f9f9;
+    $footer-bg-color: #f9f9f9;
+    $shadow-color: #ececec;
+    $scrollbar-color: #A4A29E;
+
+    @include themes2($sidebar-bg-color,
+    $primary-color,
+    $primary-highlight-color,
+    $border-color,
+    $submenu-bg-color,
+    $menu-icon-bg-color,
+    $menu-icon-color,
+    $menu-icon-highlight-color,
+    $menu-header-color,
+    $search-input-bg-color,
+    $footer-bg-color,
+    $shadow-color,
+    $scrollbar-color);
+
 }

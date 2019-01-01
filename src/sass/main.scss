@@ -2,29 +2,37 @@
     0% {
         transform: rotate(0deg);
     }
+
     10% {
         transform: rotate(10deg);
     }
+
     30% {
         transform: rotate(0deg);
     }
+
     40% {
         transform: rotate(-10deg);
     }
+
     50% {
         transform: rotate(0deg);
     }
+
     60% {
         transform: rotate(5deg);
     }
+
     70% {
         transform: rotate(0deg);
     }
+
     80% {
         transform: rotate(-5deg);
     }
+
     100% {
-        transform: rotate(0deg);        
+        transform: rotate(0deg);
     }
 }
 
@@ -33,6 +41,7 @@
         transform: scale(.9);
         opacity: 1;
     }
+
     100% {
         transform: scale(2);
         opacity: 0;
@@ -60,24 +69,33 @@ body {
     margin: 2px;
     background-size: cover;
 }
+
 .page-wrapper .theme.selected {
-    border:2px solid #00c7ff;
+    border: 2px solid #00c7ff;
 }
 
-.page-wrapper .theme.chiller-theme {
+.page-wrapper .theme.default-theme {
     background: #1d1d1d;
 }
 
-.page-wrapper .theme.ice-theme {
-    background: #2B3A42;
+.page-wrapper .theme.chiller-theme {
+    background: #374140;
 }
 
-.page-wrapper .theme.light-theme {
-    background: #F1F0ED;
+.page-wrapper .theme.legacy-theme {
+    background: #2e333c;
+}
+
+.page-wrapper .theme.ice-theme {
+    background: #3a4d56;
 }
 
 .page-wrapper .theme.cool-theme {
-    background: #38373D;
+    background: #46454c;
+}
+
+.page-wrapper .theme.light-theme {
+    background: #ececec;
 }
 
 
@@ -103,7 +121,7 @@ body {
     width: 35px;
     transition: left .3s ease;
     transition-delay: .3s;
-    
+
 }
 
 .page-wrapper.toggled #show-sidebar {
@@ -138,18 +156,22 @@ body {
     margin-right: 0px;
 }
 
+
 /*----------sidebar background images --------------*/
 
-.sidebar-bg.bg1 .sidebar-wrapper{
+.sidebar-bg.bg1 .sidebar-wrapper {
     background-image: url(../img/bg1.jpg);
 }
-.sidebar-bg.bg2 .sidebar-wrapper{
+
+.sidebar-bg.bg2 .sidebar-wrapper {
     background-image: url(../img/bg2.jpg);
 }
-.sidebar-bg.bg3 .sidebar-wrapper{
+
+.sidebar-bg.bg3 .sidebar-wrapper {
     background-image: url(../img/bg3.jpg);
 }
-.sidebar-bg.bg4 .sidebar-wrapper{
+
+.sidebar-bg.bg4 .sidebar-wrapper {
     background-image: url(../img/bg4.jpg);
 }
 
@@ -165,6 +187,7 @@ body {
 [data-bg="bg3"] {
     background-image: url(../img/bg3.jpg);
 }
+
 [data-bg="bg4"] {
     background-image: url(../img/bg4.jpg);
 }
