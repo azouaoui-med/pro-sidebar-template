@@ -8,8 +8,8 @@
     >div {
         flex-grow: 1;
         text-align: center;
-        height: 30px;
-        line-height: 30px;
+        height: 35px;
+        line-height: 35px;
         position: static;
         display: flex;
 
@@ -24,13 +24,12 @@
     }
 
     .dropdown-menu {
-        bottom: 31px;
+        bottom: 36px;
         left: 0 !important;
         top: initial !important;
         right: 0;
         transform: none !important;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 0;
         font-size: .9rem;
     }
 
@@ -49,7 +48,6 @@
             .pic {
                 width: 40px;
                 height: 40px;
-                border-radius: 4px;
                 overflow: hidden;
 
                 img {
@@ -100,7 +98,6 @@
                     height: 35px;
                     text-align: center;
                     line-height: 35px;
-                    border-radius: 4px;
                 }
             }
 

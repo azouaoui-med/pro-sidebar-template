@@ -48,7 +48,7 @@ $scrollbar-color) {
         .sidebar-menu a:hover:before,
         .sidebar-menu li.active a i {
             color: $menu-icon-highlight-color;
-            text-shadow: 0px 0px 10px rgba($menu-icon-highlight-color, .5);
+            // text-shadow: 0px 0px 10px rgba($menu-icon-highlight-color, .5);
         }
 
         .sidebar-menu ul li a i {

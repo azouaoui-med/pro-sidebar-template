@@ -27,17 +27,11 @@
 
 <body>
     <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
-        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-            <i class="fas fa-bars"></i>
-        </a>
         <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
                     <a href="#">pro sidebar</a>
-                    <div id="close-sidebar">
-                        <i class="fas fa-times"></i>
-                    </div>
                 </div>
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header">
@@ -345,13 +339,20 @@
                 </div>
             </div>
         </nav>
-        <!-- sidebar-content  -->
+        <!-- page-content  -->
         <main class="page-content">
+            <div id="overlay" class="overlay"></div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="form-group col-md-12">
                         <h2>Sidebar template</h2>
                         <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
+
+                    </div>
+                    <div class="form-group col-md-12">
+                        <a id="toggle-sidebar" class="btn btn-dark" href="#">
+                            <span>Toggle Sidebar</span>
+                        </a>
 
                     </div>
                 </div>
@@ -387,15 +388,21 @@
                             <label class="custom-control-label" for="toggle-bg">Background image</label>
                         </div>
                     </div>
+                    <div class="form-group col-md-12">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="toggle-border-radius">
+                            <label class="custom-control-label" for="toggle-border-radius">Border radius</label>
+                        </div>
+                    </div>
 
                 </div>
 
                 <hr>
                 <div class="row">
                     <div class="form-group col-md-12">
-                        <a href="https://github.com/azouaoui-med/pro-sidebar-template" class="btn btn-primary" target="_blank">
+                        <a href="https://github.com/azouaoui-med/pro-sidebar-template" class="btn btn-dark" target="_blank">
                             <i class="fab fa-github"></i> View source</a>
-                        <a href="https://github.com/azouaoui-med/pro-sidebar-template/archive/gh-pages.zip" class="btn btn-outline-primary"
+                        <a href="https://github.com/azouaoui-med/pro-sidebar-template/archive/gh-pages.zip" class="btn btn-outline-dark"
                             target="_blank">
                             <i class="fa fa-download"></i> Download</a>
                     </div>

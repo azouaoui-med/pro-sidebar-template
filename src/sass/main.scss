@@ -59,101 +59,100 @@ body {
 
 .page-wrapper {
     height: 100vh;
-}
 
-.page-wrapper .theme {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 4px;
-    margin: 2px;
-    background-size: cover;
-}
-
-.page-wrapper .theme.selected {
-    border: 2px solid #00c7ff;
-}
-
-.page-wrapper .theme.default-theme {
-    background: #1d1d1d;
-}
-
-.page-wrapper .theme.chiller-theme {
-    background: #374140;
-}
-
-.page-wrapper .theme.legacy-theme {
-    background: #2e333c;
-}
-
-.page-wrapper .theme.ice-theme {
-    background: #3a4d56;
-}
-
-.page-wrapper .theme.cool-theme {
-    background: #46454c;
-}
-
-.page-wrapper .theme.light-theme {
-    background: #ececec;
-}
-
-
-/*----------------  toggeled sidebar  ----------------*/
-
-.page-wrapper.toggled .sidebar-wrapper {
-    left: 0px;
-}
-
-@media screen and (min-width: 768px) {
-    .page-wrapper.toggled .page-content {
-        padding-left: 300px;
+    .theme {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin: 2px;
+        background-size: cover;
     }
-}
 
-/*----------------show sidebar button----------------*/
+    .theme.selected {
+        border: 2px solid #00c7ff;
+    }
 
-#show-sidebar {
-    position: fixed;
-    left: 0;
-    top: 10px;
-    border-radius: 0 4px 4px 0px;
-    width: 35px;
-    transition: left .3s ease;
-    transition-delay: .3s;
+    .theme.default-theme {
+        background: #1d1d1d;
+    }
 
-}
+    .theme.chiller-theme {
+        background: #374140;
+    }
 
-.page-wrapper.toggled #show-sidebar {
-    left: -40px;
-}
+    .theme.legacy-theme {
+        background: #2e333c;
+    }
 
-/*-----------------  page-content  ------------------*/
+    .theme.ice-theme {
+        background: #3a4d56;
+    }
 
-.page-wrapper .page-content {
-    display: inline-block;
-    width: 100%;
-    padding-left: 0px;
-    padding-top: 20px;
-    transition: padding-left .3s ease;
-}
+    .theme.cool-theme {
+        background: #46454c;
+    }
 
-.page-wrapper .page-content>div {
-    padding: 20px 40px;
-}
+    .theme.light-theme {
+        background: #ececec;
+    }
 
-.page-wrapper .page-content {
-    overflow-x: hidden;
-}
+    .page-content {
 
-/*----------------  Scroll bar style   --------------- */
+        display: inline-block;
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+        transition: padding-left .3s ease;
+        overflow-x: hidden;
 
-.mCSB_scrollTools {
-    width: 6px;
-}
+        >div {
+            padding: 20px 40px;
+        }
 
-.mCSB_inside>.mCSB_container {
-    margin-right: 0px;
+        .overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 998;
+            background: #000;
+            opacity: .5;
+            display: none;
+
+
+        }
+    }
+
+    &.toggled {
+
+        .sidebar-wrapper {
+            left: 0px;
+        }
+
+        .page-content {
+            @media screen and (min-width: 768px) {
+                padding-left: 300px;
+            }
+
+            .overlay {
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+    .mCSB_scrollTools {
+        width: 6px;
+    }
+
+    .mCSB_inside>.mCSB_container {
+        margin-right: 0px;
+    }
+
 }
 
 
@@ -190,4 +189,44 @@ body {
 
 [data-bg="bg4"] {
     background-image: url(../img/bg4.jpg);
+}
+
+/*---- border-radius ------*/
+.boder-radius-on {
+
+    .sidebar-header .user-pic {
+        border-radius: 12px;
+    }
+
+    .badge {
+        border-radius: 8px;
+    }
+
+    .sidebar-menu ul li i {
+        border-radius: 4px;
+    }
+
+    .sidebar-footer .dropdown-menu {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+
+        .notification-content i,
+        .message-content .pic {
+            border-radius: 4px;
+        }
+    }
+
+    .sidebar-search {
+
+        input {
+
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .input-group-append .input-group-text {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
 }

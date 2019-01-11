@@ -14,14 +14,13 @@ jQuery(function ($) {
 
     });
 
-    // close sidebar 
-    $("#close-sidebar").click(function () {
-        $(".page-wrapper").removeClass("toggled");
+    //toggle sidebar
+    $("#toggle-sidebar").click(function () {
+        $(".page-wrapper").toggleClass("toggled");
     });
-
-    //show sidebar
-    $("#show-sidebar").click(function () {
-        $(".page-wrapper").addClass("toggled");
+    //toggle sidebar overlay
+    $("#overlay").click(function () {
+        $(".page-wrapper").toggleClass("toggled");
     });
 
     //switch between themes 
@@ -46,6 +45,12 @@ jQuery(function ($) {
     $("#toggle-bg").change(function (e) { 
         e.preventDefault();
         $('.page-wrapper').toggleClass("sidebar-bg");
+    });
+    
+    // toggle border radius
+    $("#toggle-border-radius").change(function (e) { 
+        e.preventDefault();
+        $('.page-wrapper').toggleClass("boder-radius-on");
     });
 
     //custom scroll bar is only used on desktop
