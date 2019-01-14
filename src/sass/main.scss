@@ -100,14 +100,8 @@ body {
 
         display: inline-block;
         width: 100%;
-        padding-left: 0px;
-        padding-top: 20px;
         transition: padding-left .3s ease;
         overflow-x: hidden;
-
-        >div {
-            padding: 20px 40px;
-        }
 
         .overlay {
             position: fixed;
@@ -132,7 +126,7 @@ body {
 
         .page-content {
             @media screen and (min-width: 768px) {
-                padding-left: 300px;
+                padding-left: 280px;
             }
 
             .overlay {
@@ -144,6 +138,61 @@ body {
         }
 
     }
+
+    &.pinned:not(.sidebar-hovered) {
+
+        .sidebar-wrapper {
+            width: 80px;
+
+            .sidebar-brand a {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .sidebar-header {
+                padding: 10px;
+
+                .user-pic {
+                    margin: 0 auto;
+                    width: 50px;
+                    float: none;
+
+                    img {
+                        margin: auto;
+                    }
+                }
+
+            }
+
+            .sidebar-header .user-info,
+            .sidebar-search input,
+            .sidebar-menu .header-menu,
+            .sidebar-menu .sidebar-submenu,
+            .sidebar-menu ul>li>a>span,
+            .sidebar-menu ul>li>a::after,
+            .sidebar-footer>div:not(.pinned-footer) {
+                display: none!important;
+            }
+
+            .sidebar-search .input-group-text {
+                height: 35px;
+            }
+
+            .sidebar-footer>div.pinned-footer {
+                display: block;
+            }          
+        }
+
+        .page-content {
+            @media screen and (min-width: 768px) {
+                padding-left: 80px;
+            }
+        }
+
+    }
+
+
 
     .mCSB_scrollTools {
         width: 6px;

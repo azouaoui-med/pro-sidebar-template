@@ -87,8 +87,8 @@ body {
   top: 0;
   left: -300px;
   z-index: 999;
-  -webkit-transition: left .3s ease;
-  transition: left .3s ease; }
+  -webkit-transition: left .3s ease,width .3s ease;
+  transition: left .3s ease,width .3s ease; }
   .sidebar-wrapper ul {
     list-style-type: none;
     padding: 0;
@@ -260,6 +260,8 @@ body {
       .sidebar-wrapper .sidebar-footer > div a .notification {
         position: absolute;
         top: 0; }
+      .sidebar-wrapper .sidebar-footer > div.pinned-footer {
+        display: none; }
     .sidebar-wrapper .sidebar-footer .dropdown-menu {
       bottom: 36px;
       left: 0 !important;
@@ -383,13 +385,9 @@ body {
   .page-wrapper .page-content {
     display: inline-block;
     width: 100%;
-    padding-left: 0px;
-    padding-top: 20px;
     -webkit-transition: padding-left .3s ease;
     transition: padding-left .3s ease;
     overflow-x: hidden; }
-    .page-wrapper .page-content > div {
-      padding: 20px 40px; }
     .page-wrapper .page-content .overlay {
       position: fixed;
       top: 0;
@@ -404,10 +402,39 @@ body {
     left: 0px; }
   @media screen and (min-width: 768px) {
     .page-wrapper.toggled .page-content {
-      padding-left: 300px; } }
+      padding-left: 280px; } }
   @media screen and (max-width: 768px) {
     .page-wrapper.toggled .page-content .overlay {
       display: block; } }
+  .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper {
+    width: 80px; }
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-brand a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header {
+      padding: 10px; }
+      .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .user-pic {
+        margin: 0 auto;
+        width: 50px;
+        float: none; }
+        .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .user-pic img {
+          margin: auto; }
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .user-info,
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-search input,
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-menu .header-menu,
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-menu .sidebar-submenu,
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-menu ul > li > a > span,
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-menu ul > li > a::after,
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-footer > div:not(.pinned-footer) {
+      display: none !important; }
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-search .input-group-text {
+      height: 35px; }
+    .page-wrapper.pinned:not(.sidebar-hovered) .sidebar-wrapper .sidebar-footer > div.pinned-footer {
+      display: block; }
+  @media screen and (min-width: 768px) {
+    .page-wrapper.pinned:not(.sidebar-hovered) .page-content {
+      padding-left: 80px; } }
   .page-wrapper .mCSB_scrollTools {
     width: 6px; }
   .page-wrapper .mCSB_inside > .mCSB_container {

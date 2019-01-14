@@ -21,6 +21,10 @@
             position: absolute;
             top: 0;
         }
+
+        &.pinned-footer{
+            display: none;
+        }
     }
 
     .dropdown-menu {

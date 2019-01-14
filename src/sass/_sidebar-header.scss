@@ -1,42 +1,42 @@
-    .sidebar-header {
-        padding: 20px;
+.sidebar-header {
+    padding: 20px;
+    overflow: hidden;
+
+    .user-pic {
+        float: left;
+        width: 60px;
+        padding: 2px;
+        margin-right: 15px;
         overflow: hidden;
 
-        .user-pic {
-            float: left;
-            width: 60px;
-            padding: 2px;
-            margin-right: 15px;
-            overflow: hidden;
-
-            img {
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-            }
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
-
-        .user-info {
-            float: left;
-
-            >span {
-                display: block;
-            }
-
-            .user-role {
-                font-size: 12px;
-            }
-
-            .user-status {
-                font-size: 11px;
-                margin-top: 4px;
-
-                i {
-                    font-size: 8px;
-                    margin-right: 4px;
-                    color: #5cb85c;
-                }
-            }
-        }
-
     }
+
+    .user-info {
+        float: left;
+
+        >span {
+            display: block;
+        }
+
+        .user-role {
+            font-size: 12px;
+        }
+
+        .user-status {
+            font-size: 11px;
+            margin-top: 4px;
+
+            i {
+                font-size: 8px;
+                margin-right: 4px;
+                color: #5cb85c;
+            }
+        }
+    }
+
+}

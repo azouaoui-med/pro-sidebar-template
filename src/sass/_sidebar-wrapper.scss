@@ -6,7 +6,7 @@
     top: 0;
     left: -300px;
     z-index: 999;
-    transition: left .3s ease;
+    transition: left .3s ease,width .3s ease;
     ul {
         list-style-type: none;
         padding: 0;

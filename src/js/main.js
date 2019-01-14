@@ -18,6 +18,29 @@ jQuery(function ($) {
     $("#toggle-sidebar").click(function () {
         $(".page-wrapper").toggleClass("toggled");
     });
+    //Pin sidebar
+    $("#pin-sidebar").click(function () {
+        if ($(".page-wrapper").hasClass("pinned")) {
+            // unpin sidebar when hovered
+            $(".page-wrapper").removeClass("pinned");
+            $("#sidebar").unbind( "hover");
+        } else {
+            $(".page-wrapper").addClass("pinned");
+            $("#sidebar").hover(
+                function () {
+                    console.log("mouseenter");
+                    $(".page-wrapper").addClass("sidebar-hovered");
+                },
+                function () {
+                    console.log("mouseout");
+                    $(".page-wrapper").removeClass("sidebar-hovered");
+                }
+            )
+
+        }
+    });
+
+
     //toggle sidebar overlay
     $("#overlay").click(function () {
         $(".page-wrapper").toggleClass("toggled");
@@ -42,13 +65,13 @@ jQuery(function ($) {
     });
 
     // toggle background image
-    $("#toggle-bg").change(function (e) { 
+    $("#toggle-bg").change(function (e) {
         e.preventDefault();
         $('.page-wrapper').toggleClass("sidebar-bg");
     });
-    
+
     // toggle border radius
-    $("#toggle-border-radius").change(function (e) { 
+    $("#toggle-border-radius").change(function (e) {
         e.preventDefault();
         $('.page-wrapper').toggleClass("boder-radius-on");
     });
