@@ -144,12 +144,6 @@ body {
         .sidebar-wrapper {
             width: 80px;
 
-            .sidebar-brand a {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-
             .sidebar-header {
                 padding: 10px;
 
@@ -165,8 +159,8 @@ body {
 
             }
 
-            .sidebar-header .user-info,
             .sidebar-search input,
+            .sidebar-header .user-info,
             .sidebar-menu .header-menu,
             .sidebar-menu .sidebar-submenu,
             .sidebar-menu ul>li>a>span,

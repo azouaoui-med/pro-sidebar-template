@@ -3,7 +3,6 @@
     overflow: hidden;
 
     .user-pic {
-        float: left;
         width: 60px;
         padding: 2px;
         margin-right: 15px;
@@ -17,10 +16,12 @@
     }
 
     .user-info {
-        float: left;
+        overflow: hidden;
 
         >span {
             display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         .user-role {

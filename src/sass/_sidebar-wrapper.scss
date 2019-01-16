@@ -17,7 +17,9 @@
         text-decoration: none;
         transition: color .3s ease;
     }
-    
+    .sidebar-item {
+        transition: all .3s linear;
+    }
     .sidebar-content {
         max-height: calc(100% - 35px);
         height: calc(100% - 35px);

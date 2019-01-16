@@ -8,6 +8,9 @@
         text-transform: uppercase;
         font-weight: bold;
         flex-grow: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     #close-sidebar {

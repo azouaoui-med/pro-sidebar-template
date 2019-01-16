@@ -9,11 +9,18 @@
     }
 
     ul li a {
-        display: inline-block;
-        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
         text-decoration: none;
         position: relative;
-        padding: 8px 30px 8px 20px;       
+        padding: 8px 30px 8px 20px;
+        width: 100%;
+
+        &:hover>i::before {
+            display: inline-block;
+            animation: swing ease-in-out .5s 1 alternate;
+        }
 
         i {
             margin-right: 10px;
@@ -21,19 +28,16 @@
             width: 35px;
             height: 35px;
             line-height: 35px;
-            text-align: center;            
+            text-align: center;
+            flex-shrink: 0;
         }
 
-        &:hover>i::before {
-            display: inline-block;
-            animation: swing ease-in-out .5s 1 alternate;
-        }
-
-        span.label,
-        span.badge {
-            float: right;
-            margin-top: 8px;
-            margin-left: 5px;
+        .menu-text {
+            flex-grow: 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            flex-shrink: 1;
+            overflow: hidden;
         }
     }
 
@@ -56,7 +60,7 @@
             transition: transform .3s ease;
 
         }
-        
+
         .sidebar-submenu {
             display: none;
 
@@ -85,12 +89,12 @@
 
                     .badge,
                     .label {
-                        float: right;
-                        margin-top: 0px;
+                        margin-left: auto;
                     }
                 }
             }
         }
+
         &.active>a:after {
             transform: rotate(90deg);
             right: 15px;
