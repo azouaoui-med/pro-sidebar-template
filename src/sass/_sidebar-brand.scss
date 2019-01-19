@@ -1,21 +1,18 @@
-.sidebar-brand {
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    height: 55px;
+.sidebar-wrapper {
 
-    >a {
-        text-transform: uppercase;
-        font-weight: bold;
-        flex-grow: 1;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
+    .sidebar-brand {
+        padding: 1rem 1.2rem;
+        display: flex;
+        align-items: center;
+        height: $sidebar-brand-height;
 
-    #close-sidebar {
-        cursor: pointer;
-        font-size: 20px;
-        transition: color .3s ease;
+        >a {
+            text-transform: uppercase;
+            font-weight: bold;
+            flex-grow: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     }
 }

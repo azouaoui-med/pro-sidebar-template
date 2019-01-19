@@ -1,12 +1,13 @@
 .sidebar-wrapper {
-    width: 280px;
+    width: $sidebar-width;
     height: 100%;
     max-height: 100%;
     position: fixed;
     top: 0;
-    left: -300px;
+    left: -$sidebar-width;
     z-index: 999;
-    transition: left .3s ease,width .3s ease;
+    transition: left .3s ease, width .3s ease;
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -17,12 +18,14 @@
         text-decoration: none;
         transition: color .3s ease;
     }
+
     .sidebar-item {
         transition: all .3s linear;
     }
+
     .sidebar-content {
-        max-height: calc(100% - 35px);
-        height: calc(100% - 35px);
+        max-height: calc(100% -#{$sidebar-footer-height});
+        height: calc(100% - #{$sidebar-footer-height});
         overflow-y: scroll;
         position: relative;
 
@@ -31,16 +34,9 @@
         }
     }
 
-    .badge{
+    .badge {
         border-radius: 0;
     }
-
-    @import "./sidebar-brand";
-    @import "./sidebar-header";
-    @import "./sidebar-search";
-    @import "./sidebar-menu";
-    @import "./sidebar-footer";
-
 }
 
 .sidebar-bg .sidebar-wrapper {
@@ -57,3 +53,9 @@
         left: 0;
     }
 }
+
+@import "./sidebar-brand";
+@import "./sidebar-header";
+@import "./sidebar-search";
+@import "./sidebar-menu";
+@import "./sidebar-footer";
