@@ -1,18 +1,17 @@
 .sidebar-wrapper {
+  .sidebar-brand {
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    height: $sidebar-brand-height;
 
-    .sidebar-brand {
-        padding: 1rem 1.2rem;
-        display: flex;
-        align-items: center;
-        height: $sidebar-brand-height;
-
-        >a {
-            text-transform: uppercase;
-            font-weight: bold;
-            flex-grow: 1;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
+    >a {
+      text-transform: uppercase;
+      font-weight: bold;
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
+  }
 }
