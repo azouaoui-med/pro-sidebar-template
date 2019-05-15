@@ -11,7 +11,7 @@ If you are looking for a version built with angular, then you should checkout th
 
 ## Screenshot
 
-![sidebar](https://user-images.githubusercontent.com/25878302/48797728-4b5ef800-ed03-11e8-98ea-093e77e8976d.PNG)
+![Pro Sidebar](https://user-images.githubusercontent.com/25878302/57788668-c5fb5400-7737-11e9-91b7-7fd02703774c.png)
 
 ## Quick start
 

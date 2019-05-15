@@ -4,18 +4,18 @@
   "description": "Responsive sidebar template with dropdown menu based on bootstrap framwork",
   "main": "index.js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.1",
+    "@fortawesome/fontawesome-free": "^5.8.2",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.12.0"
   },
   "scripts": {
     "start": "gulp"
