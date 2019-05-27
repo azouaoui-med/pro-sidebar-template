@@ -467,26 +467,26 @@ body {
   background-image: url(../img/bg4.jpg); }
 
 /*---- border-radius ------*/
-.boder-radius-on .sidebar-header .user-pic {
+.border-radius-on .sidebar-header .user-pic {
   border-radius: 12px; }
 
-.boder-radius-on .badge {
+.border-radius-on .badge {
   border-radius: 8px; }
 
-.boder-radius-on .sidebar-menu ul li i {
+.border-radius-on .sidebar-menu ul li i {
   border-radius: 4px; }
 
-.boder-radius-on .sidebar-footer .dropdown-menu {
+.border-radius-on .sidebar-footer .dropdown-menu {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
-  .boder-radius-on .sidebar-footer .dropdown-menu .notification-content i,
-  .boder-radius-on .sidebar-footer .dropdown-menu .message-content .pic {
+  .border-radius-on .sidebar-footer .dropdown-menu .notification-content i,
+  .border-radius-on .sidebar-footer .dropdown-menu .message-content .pic {
     border-radius: 4px; }
 
-.boder-radius-on .sidebar-search input {
+.border-radius-on .sidebar-search input {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
-.boder-radius-on .sidebar-search .input-group-append .input-group-text {
+.border-radius-on .sidebar-search .input-group-append .input-group-text {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px; }
