@@ -86,4 +86,14 @@ jQuery(function ($) {
         $(".sidebar-content").addClass("desktop");
 
     }
+
+    //hide sidebar on screens < 768px
+    function hideOnSm(media){
+        media.matches?$(".page-wrapper").removeClass("toggled"):$(".page-wrapper").addClass("toggled");
+    };
+    $(document).ready(function(){
+        var media = window.matchMedia("(max-width: 768px)");
+        hideOnSm(media);
+        media.addListener(hideOnSm);
+    }); 
 });
