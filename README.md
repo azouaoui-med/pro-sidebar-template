@@ -26,7 +26,7 @@ npm start
 ## Resources
 *   [Bootstrap](https://getbootstrap.com/)
 *   [JQuery](http://jquery.com/)
-*   [Font awsome](http://fontawesome.io/)
+*   [Font awesome](http://fontawesome.io/)
 *   [Malihu custom scrollbar plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 
 ## License
