@@ -6,7 +6,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "popper.js": "^1.15.0"
   },
