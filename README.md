@@ -16,21 +16,15 @@ If you are looking for a version built with angular, then you should checkout th
 ## Quick start
 
 ```
-1. Install .[Node Js](https://nodejs.org/en/)
+1. Install Node Js
 
 2. Open File Location using CMD 
 
 3. Start npm using ## npm init 
 
+4. Install Node Sass (npm install node-sass )
 
-*   [Bootstrap](https://getbootstrap.com/)
-*   [JQuery](http://jquery.com/)
-*   [Font awesome](http://fontawesome.io/)
-*   [Malihu custom scrollbar plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 
-npm install 
-
-npm start
 ```
 
  Server runs on http://localhost:3000
