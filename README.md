@@ -25,7 +25,6 @@ If you are looking for a version built with angular, then you should checkout th
 4. Install Node Sass (npm install node-sass )
 
 
-```
 
  Server runs on http://localhost:3000
 
