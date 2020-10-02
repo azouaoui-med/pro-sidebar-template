@@ -22,7 +22,7 @@ If you are looking for a version built with angular, then you should checkout th
 
 2. Open File Location using CMD 
 
-3. Start npm using ## npm init 
+3. Start npm using ## npm init  (exclude ##)
 
 4. Install Node Sass (npm install node-sass )
 
