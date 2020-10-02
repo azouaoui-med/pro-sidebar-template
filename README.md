@@ -22,6 +22,12 @@ If you are looking for a version built with angular, then you should checkout th
 
 3. Start npm using ## npm init 
 
+
+*   [Bootstrap](https://getbootstrap.com/)
+*   [JQuery](http://jquery.com/)
+*   [Font awesome](http://fontawesome.io/)
+*   [Malihu custom scrollbar plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
+
 npm install 
 
 npm start
