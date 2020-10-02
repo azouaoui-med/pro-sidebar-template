@@ -1,0 +1,140 @@
+.page-wrapper {
+    height: 100vh;
+
+    .theme {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin: 2px;
+        background-size: cover;
+    }
+
+    .theme.selected {
+        border: 2px solid #00c7ff;
+    }
+
+    .theme.default-theme {
+        background: #1d1d1d;
+    }
+
+    .theme.chiller-theme {
+        background: #374140;
+    }
+
+    .theme.legacy-theme {
+        background: #2e333c;
+    }
+
+    .theme.ice-theme {
+        background: #3a4d56;
+    }
+
+    .theme.cool-theme {
+        background: #46454c;
+    }
+
+    .theme.light-theme {
+        background: #ececec;
+    }
+
+    .page-content {
+
+        display: inline-block;
+        width: 100%;
+        transition: padding-left .3s ease;
+        overflow-x: hidden;
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 998;
+            background: #000;
+            opacity: .5;
+            display: none;
+
+
+        }
+    }
+
+    &.toggled {
+
+        .sidebar-wrapper {
+            left: 0px;
+        }
+
+        .page-content {
+            @media screen and (min-width: 768px) {
+                padding-left: $sidebar-width;
+            }
+
+            .overlay {
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+        &.pinned{
+            .page-content {
+
+                @media screen and (min-width: 768px) {
+                    padding-left: $sidebar-pinned-width;
+                }
+            }
+        }
+
+    }
+
+    &.pinned:not(.sidebar-hovered) {
+
+        .sidebar-wrapper {
+            width: $sidebar-pinned-width;
+
+            .sidebar-header {
+                padding: 10px;
+
+                .user-pic {
+                    margin: 0 auto;
+                    width: 50px;
+                    float: none;
+
+                    img {
+                        margin: auto;
+                    }
+                }
+
+            }
+
+            .sidebar-search input,
+            .sidebar-header .user-info,
+            .sidebar-menu .header-menu,
+            .sidebar-menu .sidebar-submenu,
+            .sidebar-menu ul>li>a>span,
+            .sidebar-menu ul>li>a::after,
+            .sidebar-footer>div:not(.pinned-footer) {
+                display: none!important;
+            }
+
+            .sidebar-search .input-group-text {
+                height: 35px;
+            }
+
+            .sidebar-footer>div.pinned-footer {
+                display: block;
+            }          
+        }
+
+    }
+
+    .mCSB_scrollTools {
+        width: 6px;
+    }
+
+    .mCSB_inside>.mCSB_container {
+        margin-right: 0px;
+    }
+
+}

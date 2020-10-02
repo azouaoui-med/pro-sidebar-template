@@ -1,0 +1,38 @@
+.border-radius-on {
+
+    .sidebar-header .user-pic {
+        border-radius: 12px;
+    }
+
+    .badge {
+        border-radius: 8px;
+    }
+
+    .sidebar-menu ul li i {
+        border-radius: $border-radius;
+    }
+
+    .sidebar-footer .dropdown-menu {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+
+        .notification-content i,
+        .message-content .pic {
+            border-radius: $border-radius;
+        }
+    }
+
+    .sidebar-search {
+
+        input {
+
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+        }
+
+        .input-group-append .input-group-text {
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+        }
+    }
+}

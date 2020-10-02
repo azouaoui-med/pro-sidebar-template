@@ -1,0 +1,109 @@
+.sidebar-wrapper {
+    .sidebar-menu {
+        padding-bottom: 10px;
+
+        .header-menu span {
+            font-weight: bold;
+            font-size: 14px;
+            padding: 15px 20px 5px 20px;
+            display: inline-block;
+        }
+
+        ul li a {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+            padding: 8px 30px 8px 20px;
+            width: 100%;
+
+            &:hover>i::before {
+                display: inline-block;
+                animation: swing ease-in-out .5s 1 alternate;
+            }
+
+            i {
+                margin-right: 10px;
+                font-size: 12px;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+
+            .menu-text {
+                flex-grow: 1;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                flex-shrink: 1;
+                overflow: hidden;
+            }
+        }
+
+        .sidebar-dropdown {
+            >a:after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f105";
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-align: center;
+                background: 0 0;
+                position: absolute;
+                right: 15px;
+                top: 14px;
+                transition: transform .3s ease;
+
+            }
+
+            .sidebar-submenu {
+                display: none;
+
+                ul {
+                    padding: 5px 0;
+                }
+
+                li {
+                    padding-left: 25px;
+                    font-size: 13px;
+
+                    a {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        &:before {
+                            content: "\f111";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 400;
+                            font-style: normal;
+                            display: inline-block;
+                            text-align: center;
+                            text-decoration: none;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                            margin-right: 10px;
+                            font-size: 8px;
+                        }
+
+                        .badge,
+                        .label {
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+
+            &.active>a:after {
+                transform: rotate(90deg);
+                right: 15px;
+            }
+        }
+
+    }
+}
