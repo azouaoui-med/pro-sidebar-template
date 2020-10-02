@@ -16,7 +16,7 @@ If you are looking for a version built with angular, then you should checkout th
 ## Quick start
 
 ```
-1. Install [Node-Js](https://nodejs.org/en/)
+1. Install *[Node-Js](https://nodejs.org/en/)
 
 2. Open File Location using CMD 
 
