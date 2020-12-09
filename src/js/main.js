@@ -85,7 +85,7 @@ jQuery(function ($) {
   // toggle border radius
   $('#toggle-border-radius').change(function (e) {
     e.preventDefault();
-    $('.page-wrapper').toggleClass('boder-radius-on');
+    $('.page-wrapper').toggleClass('border-radius-on');
   });
 
   //custom scroll bar is only used on desktop
