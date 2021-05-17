@@ -1,5 +1,27 @@
+@import './variables';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '../../public//assets//remixicon/remixicon.css';
+@import 'css-pro-layout/dist/scss/css-pro-layout.scss';
+@import './layout';
+@import './sidebar';
+@import './menu';
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  margin: 0;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }

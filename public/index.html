@@ -6,7 +6,96 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Pro sidebar template</h1>
+    <div class="layout has-sidebar fixed-sidebar fixed-header">
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-layout">
+          <div class="sidebar-header">Pro Sidebar</div>
+          <div class="sidebar-content">
+            <div class="menu">
+              <ul>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-dashboard-3-line"></i>
+                    </span>
+                    <span class="menu-title">Dashboard</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="#">
+                          <span class="menu-title">menu item</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-dashboard-3-line"></i>
+                    </span>
+                    <span class="menu-title">Dashboard</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="#">
+                          <span class="menu-title">menu item</span>
+                        </a>
+                      </li>
+                      <li class="menu-item sub-menu">
+                        <a href="#">
+                          <span class="menu-title">Dashboard</span>
+                        </a>
+                        <div class="sub-menu-list">
+                          <ul>
+                            <li class="menu-item">
+                              <a href="#">
+                                <span class="menu-title">sub menu item</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-dashboard-3-line"></i>
+                    </span>
+                    <span class="menu-title">Product</span>
+                    <span class="menu-suffix">&#x1F525;</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-dashboard-3-line"></i>
+                    </span>
+                    <span class="menu-prefix">&#x1F600;</span>
+                    <span class="menu-title">menu item</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar-footer">sidebar footer</div>
+        </div>
+      </aside>
+      <div class="layout">
+        <header class="header">
+          <a id="btn-collapse" href="#">
+            <i class="ri-menu-line"></i>
+          </a>
+        </header>
+        <main class="content">Content</main>
+        <div class="overlay"></div>
+        <footer class="footer">Footer</footer>
+      </div>
+    </div>
   </body>
   <script src="./main.js"></script>
 </html>

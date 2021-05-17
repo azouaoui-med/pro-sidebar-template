@@ -1,0 +1,116 @@
+.layout {
+  .sidebar {
+    .menu {
+      .menu-item {
+        a {
+          display: flex;
+          align-items: center;
+          height: 50px;
+          padding: 0 20px;
+          color: $text-color;
+
+          .menu-icon {
+            font-size: 1.2rem;
+            width: 35px;
+            min-width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            display: inline-block;
+            background-color: $secondary-bg-color;
+            margin-right: 10px;
+            border-radius: 2px;
+          }
+
+          .menu-title {
+            font-size: 0.9rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            flex-grow: 1;
+          }
+          .menu-prefix,
+          .menu-suffix {
+            opacity: 1;
+            transition: opacity 0.3s;
+          }
+        }
+
+        &.sub-menu {
+          > a {
+            &::after {
+              content: '';
+              transition: transform 0.3s ease;
+              border-right: 2px solid currentcolor;
+              border-bottom: 2px solid currentcolor;
+              width: 5px;
+              height: 5px;
+              transform: rotate(-45deg);
+            }
+          }
+
+          > .sub-menu-list {
+            padding-left: 20px;
+            display: none;
+            overflow: hidden;
+            z-index: 999;
+          }
+          &.open {
+            > a {
+              &::after {
+                transform: rotate(45deg);
+              }
+            }
+            > .sub-menu-list {
+              // display: block;
+            }
+          }
+        }
+      }
+      > ul > .sub-menu > .sub-menu-list {
+        background-color: $secondary-bg-color;
+      }
+    }
+
+    &:not(.collapsed) {
+      .menu > ul {
+        > .menu-item {
+          &.sub-menu {
+            > .sub-menu-list {
+              visibility: visible !important;
+              position: static !important;
+              transform: translate(0, 0) !important;
+            }
+          }
+        }
+      }
+    }
+
+    &.collapsed {
+      .menu > ul {
+        > .menu-item {
+          > a {
+            .menu-prefix,
+            .menu-suffix {
+              opacity: 0;
+            }
+          }
+          &.sub-menu {
+            > a {
+              &::after {
+                display: none;
+              }
+            }
+            > .sub-menu-list {
+              transition: none !important;
+              width: 200px;
+              margin-left: 3px !important;
+              border-radius: 4px;
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

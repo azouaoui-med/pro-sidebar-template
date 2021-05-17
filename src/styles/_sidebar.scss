@@ -1,0 +1,24 @@
+.sidebar {
+  color: $text-color;
+  overflow-x: hidden !important;
+
+  .sidebar-layout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    .sidebar-header {
+      height: $header-height;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 1px solid $border-color;
+    }
+    .sidebar-content {
+      flex-grow: 1;
+      padding: 10px 0;
+    }
+    .sidebar-footer {
+    }
+  }
+}

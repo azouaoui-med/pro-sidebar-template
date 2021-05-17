@@ -1,0 +1,17 @@
+.layout {
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #9aa0b9;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .content {
+    padding: 20px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+}

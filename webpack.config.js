@@ -15,12 +15,21 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
-          'less-loader',
+          // 'less-loader',
           'postcss-loader',
         ],
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader'],
+      },
     ],
   },
+  target: 'web',
   devtool: 'source-map',
   devServer: {
     contentBase: './public',
