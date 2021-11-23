@@ -1,6 +1,6 @@
-const initialDuration = 300;
+const INITIAL_DURATION = 300;
 
-const slideUp = (target, duration = initialDuration) => {
+const slideUp = (target, duration = INITIAL_DURATION) => {
   const parentElement = target.parentElement;
   parentElement.classList.remove('open');
   target.style.transitionProperty = 'height, margin, padding';
@@ -27,7 +27,7 @@ const slideUp = (target, duration = initialDuration) => {
   }, duration);
 };
 
-const slideDown = (target, duration = initialDuration) => {
+const slideDown = (target, duration = INITIAL_DURATION) => {
   const parentElement = target.parentElement;
   parentElement.classList.add('open');
   target.style.removeProperty('display');
@@ -58,7 +58,7 @@ const slideDown = (target, duration = initialDuration) => {
   }, duration);
 };
 
-export const slideToggle = (target, duration = initialDuration) => {
+export const slideToggle = (target, duration = INITIAL_DURATION) => {
   if (window.getComputedStyle(target).display === 'none')
     return slideDown(target, duration);
   else return slideUp(target, duration);

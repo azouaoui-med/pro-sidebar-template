@@ -1,5 +1,5 @@
 import { SUB_MENU_ELS } from './constants';
-import Popper from './Popper';
+import Popper from './popper';
 
 class Poppers {
   subMenuPoppers = [];
@@ -21,7 +21,6 @@ class Poppers {
   }
 
   updatePoppers() {
-    console.log(this.subMenuPoppers);
     this.subMenuPoppers.forEach((element) => {
       element.instance.state.elements.popper.style.display = 'none';
       element.instance.update();
@@ -30,7 +29,6 @@ class Poppers {
 
   closePoppers() {
     this.subMenuPoppers.forEach((element) => {
-      // element.state.elements.popper.style.display = 'none';
       element.hide();
     });
   }
