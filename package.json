@@ -3,18 +3,18 @@
   "version": "4.0.0-alpha.1",
   "main": "src/index.js",
   "repository": "https://github.com/azouaoui-med/pro-sidebar-template.git",
-  "author": "Mohamed AZOUAOUI <azouaoui.med@gmail.com>",
+  "author": "Mohamed Azouaoui <azouaoui.med@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve",
     "build": "copyfiles -u 1 public/* dist && webpack"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.2",
-    "@babel/preset-env": "^7.14.2",
-    "babel-loader": "^8.2.2",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
     "copyfiles": "^2.4.1",
-    "css-loader": "^5.2.4",
+    "css-loader": "^5.2.7",
     "file-loader": "^6.2.0",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
@@ -22,12 +22,12 @@
     "postcss": "^8.2.15",
     "postcss-loader": "^5.2.0",
     "postcss-preset-env": "^6.7.0",
-    "sass": "^1.32.13",
-    "sass-loader": "^11.1.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.37.0",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
