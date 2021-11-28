@@ -46,6 +46,7 @@
             background-color: $secondary-bg-color;
             margin-right: 10px;
             border-radius: 2px;
+            transition: color 0.3s;
             i {
               display: inline-block;
             }
@@ -57,11 +58,25 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             flex-grow: 1;
+            transition: color 0.3s;
           }
           .menu-prefix,
           .menu-suffix {
             opacity: 1;
             transition: opacity 0.3s;
+          }
+          &:hover {
+            .menu-title {
+              color: $secondary-text-color;
+            }
+            .menu-icon {
+              color: $secondary-text-color i {
+                animation: swing ease-in-out 0.5s 1 alternate;
+              }
+            }
+            &::after {
+              border-color: white !important;
+            }
           }
         }
 
@@ -76,6 +91,7 @@
               width: 5px;
               height: 5px;
               transform: rotate(-45deg);
+              transition: border-color, background-color 0.3s;
             }
           }
 
@@ -94,10 +110,15 @@
           }
         }
 
-        &:hover {
-          .menu-icon {
-            i {
-              animation: swing ease-in-out 0.5s 1 alternate;
+        &.active {
+          > a {
+            .menu-title {
+              color: $secondary-text-color;
+            }
+            .menu-icon {
+              color: $secondary-text-color i {
+                animation: swing ease-in-out 0.5s 1 alternate;
+              }
             }
           }
         }
@@ -131,21 +152,24 @@
             }
           }
           &.sub-menu {
-            &::after {
-              content: '';
-              width: 5px;
-              height: 5px;
-              background: currentcolor;
-              border-radius: 50%;
-              display: inline-block;
-              position: absolute;
-              right: 10px;
-              top: 50%;
-              transform: translateY(-50%);
-            }
             > a {
               &::after {
-                display: none;
+                content: '';
+                width: 5px;
+                height: 5px;
+                background-color: currentcolor;
+                border-radius: 50%;
+                display: inline-block;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                border: none;
+                transform: translateY(-50%);
+              }
+              &:hover {
+                &::after {
+                  background-color: $secondary-text-color;
+                }
               }
             }
             > .sub-menu-list {
