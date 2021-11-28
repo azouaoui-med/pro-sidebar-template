@@ -6,10 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="layout has-sidebar fixed-sidebar fixed-header">
-      <aside id="sidebar" class="sidebar">
+    <div class="layout has-sidebar fixed-sidebar fixed-header rtl">
+      <aside id="sidebar" class="sidebar break-point-lg">
         <div class="sidebar-layout">
-          <div class="sidebar-header">Pro Sidebar</div>
+          <div class="sidebar-header">
+            <span>Pro Sidebar</span>
+          </div>
           <div class="sidebar-content">
             <div class="menu">
               <ul>
@@ -33,9 +35,9 @@
                 <li class="menu-item sub-menu">
                   <a href="#">
                     <span class="menu-icon">
-                      <i class="ri-dashboard-3-line"></i>
+                      <i class="ri-vip-diamond-line"></i>
                     </span>
-                    <span class="menu-title">Dashboard</span>
+                    <span class="menu-title">Diamond</span>
                   </a>
                   <div class="sub-menu-list">
                     <ul>
@@ -46,7 +48,7 @@
                       </li>
                       <li class="menu-item sub-menu">
                         <a href="#">
-                          <span class="menu-title">Dashboard</span>
+                          <span class="menu-title">Sub Menu</span>
                         </a>
                         <div class="sub-menu-list">
                           <ul>
@@ -64,30 +66,34 @@
                 <li class="menu-item">
                   <a href="#">
                     <span class="menu-icon">
-                      <i class="ri-dashboard-3-line"></i>
+                      <i class="ri-heart-line"></i>
                     </span>
-                    <span class="menu-title">Product</span>
+                    <span class="menu-title">Lovely</span>
                     <span class="menu-suffix">&#x1F525;</span>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a href="#">
                     <span class="menu-icon">
-                      <i class="ri-dashboard-3-line"></i>
+                      <i class="ri-space-ship-line"></i>
                     </span>
                     <span class="menu-prefix">&#x1F600;</span>
-                    <span class="menu-title">menu item</span>
+                    <span class="menu-title">Space</span>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="sidebar-footer">sidebar footer</div>
+          <div class="sidebar-footer"><span>Sidebar footer</span></div>
         </div>
       </aside>
+      <div id="overlay" class="overlay"></div>
       <div class="layout">
         <header class="header">
           <a id="btn-collapse" href="#">
+            <i class="ri-menu-line ri-xl"></i>
+          </a>
+          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-lg">
             <i class="ri-menu-line"></i>
           </a>
         </header>
