@@ -86,7 +86,7 @@
           > a {
             &::after {
               content: '';
-              transition: all 0.3s;
+              transition: transform 0.3s;
               border-right: 2px solid currentcolor;
               border-bottom: 2px solid currentcolor;
               width: 5px;
@@ -115,10 +115,11 @@
             .menu-title {
               color: $secondary-text-color;
             }
+            &::after {
+              border-color: $secondary-text-color;
+            }
             .menu-icon {
-              color: $secondary-text-color i {
-                animation: swing ease-in-out 0.5s 1 alternate;
-              }
+              color: $secondary-text-color;
             }
           }
         }
@@ -178,6 +179,13 @@
               margin-left: 3px !important;
               border-radius: 4px;
               display: block !important;
+            }
+          }
+          &.active {
+            > a {
+              &::after {
+                background-color: $secondary-text-color;
+              }
             }
           }
         }
