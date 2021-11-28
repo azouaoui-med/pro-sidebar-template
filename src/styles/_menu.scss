@@ -70,12 +70,13 @@
               color: $secondary-text-color;
             }
             .menu-icon {
-              color: $secondary-text-color i {
+              color: $secondary-text-color;
+              i {
                 animation: swing ease-in-out 0.5s 1 alternate;
               }
             }
             &::after {
-              border-color: white !important;
+              border-color: $secondary-text-color !important;
             }
           }
         }
@@ -85,13 +86,12 @@
           > a {
             &::after {
               content: '';
-              transition: transform 0.3s ease;
+              transition: all 0.3s;
               border-right: 2px solid currentcolor;
               border-bottom: 2px solid currentcolor;
               width: 5px;
               height: 5px;
               transform: rotate(-45deg);
-              transition: border-color, background-color 0.3s;
             }
           }
 
@@ -179,6 +179,24 @@
               border-radius: 4px;
               display: block !important;
             }
+          }
+        }
+      }
+    }
+    &.has-bg-image {
+      .menu {
+        .menu-item {
+          a {
+            .menu-icon {
+              background-color: rgba($secondary-bg-color, 0.6);
+            }
+          }
+        }
+      }
+      &:not(.collapsed) {
+        .menu {
+          > ul > .sub-menu > .sub-menu-list {
+            background-color: rgba($secondary-bg-color, 0.6);
           }
         }
       }
