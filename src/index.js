@@ -10,9 +10,22 @@ const sidebarElem = document.getElementById('sidebar');
 document.getElementById('btn-collapse').addEventListener('click', () => {
   sidebarElem.classList.toggle('collapsed');
   PoppersInstance.closePoppers();
+  if (sidebarElem.classList.contains('collapsed'))
+    FIRST_SUB_MENUS_BTN.forEach((element) => {
+      element.parentElement.classList.remove('open');
+    });
+
   setTimeout(() => {
     PoppersInstance.updatePoppers();
   }, 300);
+});
+
+document.getElementById('btn-toggle').addEventListener('click', () => {
+  sidebarElem.classList.toggle('toggled');
+});
+
+document.getElementById('overlay').addEventListener('click', () => {
+  sidebarElem.classList.toggle('toggled');
 });
 
 const defaultOpenMenus = document.querySelectorAll('.menu-item.sub-menu.open');
