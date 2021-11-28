@@ -8,17 +8,32 @@
     flex-direction: column;
     background-color: $bg-color;
     .sidebar-header {
-      height: $header-height;
+      height: $sidebar-header-height;
       display: flex;
       align-items: center;
       padding: 0 20px;
       border-bottom: 1px solid $border-color;
+      > span {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
     }
     .sidebar-content {
       flex-grow: 1;
       padding: 10px 0;
     }
     .sidebar-footer {
+      height: $sidebar-footer-height;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid $border-color;
+      padding: 0 20px;
+      > span {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
     }
   }
 }
