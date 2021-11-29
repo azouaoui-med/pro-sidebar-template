@@ -265,7 +265,7 @@
         .menu > ul {
           > .menu-item {
             &.sub-menu {
-              &::after {
+              a::after {
                 right: auto;
                 left: 10px;
               }
