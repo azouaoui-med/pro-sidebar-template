@@ -43,7 +43,6 @@
             line-height: 35px;
             text-align: center;
             display: inline-block;
-            background-color: $secondary-bg-color;
             margin-right: 10px;
             border-radius: 2px;
             transition: color 0.3s;
@@ -127,6 +126,24 @@
       > ul > .sub-menu > .sub-menu-list {
         background-color: $secondary-bg-color;
       }
+
+      &.icon-shape-circle,
+      &.icon-shape-rounded,
+      &.icon-shape-square {
+        .menu-item a .menu-icon {
+          background-color: $secondary-bg-color;
+        }
+      }
+
+      &.icon-shape-circle .menu-item a .menu-icon {
+        border-radius: 50%;
+      }
+      &.icon-shape-rounded .menu-item a .menu-icon {
+        border-radius: 4px;
+      }
+      &.icon-shape-square .menu-item a .menu-icon {
+        border-radius: 0;
+      }
     }
 
     &:not(.collapsed) {
@@ -193,11 +210,11 @@
     }
     &.has-bg-image {
       .menu {
-        .menu-item {
-          a {
-            .menu-icon {
-              background-color: rgba($secondary-bg-color, 0.6);
-            }
+        &.icon-shape-circle,
+        &.icon-shape-rounded,
+        &.icon-shape-square {
+          .menu-item a .menu-icon {
+            background-color: rgba($secondary-bg-color, 0.6);
           }
         }
       }
