@@ -11,6 +11,7 @@ class Poppers {
   init() {
     SUB_MENU_ELS.forEach((element) => {
       this.subMenuPoppers.push(new Popper(element, element.lastElementChild));
+      this.closePoppers();
     });
   }
 
