@@ -25,3 +25,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+@media (max-width: $breakpoint-lg) {
+  #btn-collapse {
+    display: none;
+  }
+}
