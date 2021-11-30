@@ -32,6 +32,7 @@
     z-index: 2;
     .sidebar-header {
       height: $sidebar-header-height;
+      min-height: $sidebar-header-height;
       display: flex;
       align-items: center;
       padding: 0 20px;
@@ -48,6 +49,7 @@
     }
     .sidebar-footer {
       height: $sidebar-footer-height;
+      min-height: $sidebar-footer-height;
       display: flex;
       align-items: center;
       border-top: 1px solid $border-color;
