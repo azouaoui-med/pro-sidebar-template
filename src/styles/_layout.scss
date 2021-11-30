@@ -8,10 +8,14 @@
   }
   .content {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .footer {
     text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
     padding: 20px;
   }
   &.rtl {
