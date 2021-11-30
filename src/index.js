@@ -66,7 +66,7 @@ FIRST_SUB_MENUS_BTN.forEach((element) => {
       /**
        * if menu has "open-current-only" class then only one submenu opens at a time
        */
-      const parentMenu = element.closest('.menu.open-current-only');
+      const parentMenu = element.closest('.menu.open-current-submenu');
       if (parentMenu)
         parentMenu
           .querySelectorAll(':scope > ul > .menu-item.sub-menu > a')
