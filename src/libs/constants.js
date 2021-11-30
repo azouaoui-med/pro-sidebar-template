@@ -1,3 +1,5 @@
+export const ANIMATION_DURATION = 300;
+
 export const SIDEBAR_EL = document.getElementById('sidebar');
 
 export const SUB_MENU_ELS = document.querySelectorAll(
