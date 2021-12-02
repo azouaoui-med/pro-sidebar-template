@@ -4,7 +4,7 @@ Responsive layout with advanced sidebar menu built with SCSS and vanilla Javascr
 
 ## Demo
 
-[See it live](https://azouaoui-med.github.io/pro-sidebar-template/src)
+[See it live](https://azouaoui-med.github.io/pro-sidebar-template)
 
 ## Screenshot
 
