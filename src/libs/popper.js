@@ -36,7 +36,7 @@ class Popper {
     document.addEventListener(
       'click',
       (e) => this.clicker(e, this.popperTarget, this.reference),
-      false
+      false,
     );
 
     const ro = new ResizeObserver(() => {
