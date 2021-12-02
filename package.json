@@ -6,13 +6,15 @@
   "author": "Mohamed Azouaoui <azouaoui.med@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist",
     "start": "webpack serve",
-    "build": "copyfiles -u 1 public/* dist && webpack"
+    "build": "rimraf dist && webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.0.0",
     "copyfiles": "^2.4.1",
     "css-loader": "^5.2.7",
     "eslint": "^8.2.0",
@@ -28,6 +30,7 @@
     "postcss-loader": "^5.2.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.5.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "style-loader": "^2.0.0",
