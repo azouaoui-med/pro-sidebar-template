@@ -1,0 +1,26 @@
+.layout {
+  z-index: 1;
+  .header {
+    box-shadow: 1px 1px 4px #9aa0b9;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  &.rtl {
+    .header {
+      box-shadow: -1px 1px 4px #9aa0b9;
+    }
+  }
+}

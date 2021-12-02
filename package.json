@@ -1,34 +1,42 @@
 {
   "name": "pro-sidebar-template",
-  "version": "1.0.0",
-  "description": "Responsive sidebar template with dropdown menu based on bootstrap framwork",
-  "main": "index.js",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.2",
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.5.0",
-    "malihu-custom-scrollbar-plugin": "^3.1.5",
-    "popper.js": "^1.15.0"
+  "version": "4.0.0-alpha.1",
+  "main": "src/index.js",
+  "repository": "https://github.com/azouaoui-med/pro-sidebar-template.git",
+  "author": "Mohamed Azouaoui <azouaoui.med@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "copyfiles -u 1 public/* dist && webpack"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0"
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "copyfiles": "^2.4.1",
+    "css-loader": "^5.2.7",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "less": "^4.1.1",
+    "less-loader": "^8.1.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss": "^8.2.15",
+    "postcss-loader": "^5.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.5.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
   },
-  "scripts": {
-    "start": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/azouaoui-med/pro-sidebar-template.git"
-  },
-  "keywords": [],
-  "author": "Azouaoui Mohamed",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/azouaoui-med/pro-sidebar-template/issues"
-  },
-  "homepage": "https://github.com/azouaoui-med/pro-sidebar-template#readme"
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "css-pro-layout": "^1.1.0"
+  }
 }
