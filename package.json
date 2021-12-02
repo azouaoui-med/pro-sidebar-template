@@ -8,7 +8,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "start": "webpack serve",
-    "build": "rimraf dist && webpack"
+    "build": "rimraf dist && webpack",
+    "gh-pages": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -23,6 +24,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
     "mini-css-extract-plugin": "^1.6.0",
