@@ -1,18 +1,21 @@
 {
   "name": "pro-sidebar-template",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.0-beta.1",
   "main": "src/index.js",
   "repository": "https://github.com/azouaoui-med/pro-sidebar-template.git",
   "author": "Mohamed Azouaoui <azouaoui.med@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist",
     "start": "webpack serve",
-    "build": "copyfiles -u 1 public/* dist && webpack"
+    "build": "rimraf dist && webpack",
+    "gh-pages": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.0.0",
     "copyfiles": "^2.4.1",
     "css-loader": "^5.2.7",
     "eslint": "^8.2.0",
@@ -21,6 +24,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
     "mini-css-extract-plugin": "^1.6.0",
@@ -28,6 +32,7 @@
     "postcss-loader": "^5.2.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.5.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.43.4",
     "sass-loader": "^12.3.0",
     "style-loader": "^2.0.0",
