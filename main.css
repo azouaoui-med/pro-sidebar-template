@@ -404,6 +404,7 @@
   background-color: #0c1e35;
 }
 .sidebar .image-wrapper {
+  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
