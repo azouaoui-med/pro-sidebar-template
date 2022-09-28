@@ -381,6 +381,7 @@
   display: flex;
   align-items: center;
   padding: 20px;
+  background-color: white;
 }
 .layout .content {
   padding: 20px;
