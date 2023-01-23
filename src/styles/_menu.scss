@@ -32,6 +32,14 @@
         padding: 0;
         margin: 0;
       }
+      .menu-header {
+        font-weight: 600;
+        padding: 10px 25px;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        transition: opacity 0.3s;
+        opacity: 0.5;
+      }
       .menu-item {
         a {
           display: flex;
@@ -169,6 +177,9 @@
 
     &.collapsed {
       .menu > ul {
+        > .menu-header {
+          opacity: 0;
+        }
         > .menu-item {
           > a {
             .menu-prefix,
