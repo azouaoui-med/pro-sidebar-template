@@ -29,6 +29,37 @@ a {
 
 .layout {
   .sidebar {
+    .pro-sidebar-logo {
+      display: flex;
+      align-items: center;
+
+      > div {
+        width: 35px;
+        min-width: 35px;
+        height: 35px;
+        min-height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        background-color: #ff8100;
+        margin-right: 10px;
+      }
+
+      > h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        line-height: 30px;
+        transition: opacity 0.3s;
+        opacity: 1;
+      }
+    }
+
     .footer-box {
       display: flex;
       flex-direction: column;
