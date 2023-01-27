@@ -1,5 +1,8 @@
+$sidebar-width: 250px;
+$sidebar-collapsed-width: 80px;
+
 @import 'css-pro-layout/dist/scss/css-pro-layout.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import '../../public//assets//remixicon/remixicon.css';
 @import './variables';
 @import './layout';
@@ -13,8 +16,9 @@
 body {
   margin: 0;
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  color: #212529;
+  font-family: 'Poppins', sans-serif;
+  color: #3f4750;
+  font-size: 0.9rem;
 }
 
 a {
