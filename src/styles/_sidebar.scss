@@ -2,7 +2,7 @@
   color: $text-color;
   overflow-x: hidden !important;
   position: relative;
-  background-color: $bg-color;
+
 
   .image-wrapper {
     overflow: hidden;
@@ -11,7 +11,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.2;
     z-index: 1;
     display: none;
     > img {
@@ -26,18 +25,20 @@
   }
 
   .sidebar-layout {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: $bg-color;
     z-index: 2;
+
     .sidebar-header {
       height: $sidebar-header-height;
       min-height: $sidebar-header-height;
       display: flex;
       align-items: center;
       padding: 0 20px;
-      border-bottom: 1px solid $border-color;
       > span {
         overflow: hidden;
         white-space: nowrap;
@@ -53,7 +54,6 @@
       min-height: $sidebar-footer-height;
       display: flex;
       align-items: center;
-      border-top: 1px solid $border-color;
       padding: 0 20px;
       > span {
         overflow: hidden;
