@@ -89,6 +89,48 @@ a {
       }
     }
 
+    .sidebar-collapser {
+      transition: left, right, 0.3s;
+      position: fixed;
+      left: calc(#{$sidebar-width} - 20px);
+      top: 40px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #00829f;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      transform: translateX(50%);
+      z-index: 111;
+      cursor: pointer;
+      color: white;
+      box-shadow: 1px 1px 4px $bg-color;
+    }
+
+    &.collapsed {
+      .pro-sidebar-logo {
+        > h5 {
+          opacity: 0;
+        }
+      }
+      .footer-box {
+        display: none;
+      }
+      .sidebar-collapser {
+        left: calc(#{$sidebar-collapsed-width} - 20px);
+        i {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
@@ -111,3 +153,8 @@ a {
   }
 }
 
+.sidebar-toggler {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}

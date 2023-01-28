@@ -14,6 +14,7 @@
   <body>
     <div class="layout has-sidebar fixed-sidebar fixed-header">
       <aside id="sidebar" class="sidebar break-point-lg has-bg-image">
+        <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
         <div class="image-wrapper">
           <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
         </div>
@@ -267,20 +268,15 @@
       </aside>
       <div id="overlay" class="overlay"></div>
       <div class="layout">
-        <header class="header">
-          <a id="btn-collapse" href="#">
-            <i class="ri-menu-line ri-xl"></i>
-          </a>
-          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-lg">
-            <i class="ri-menu-line ri-xl"></i>
-          </a>
-        </header>
         <main class="content">
           <div>
-            <h1>Pro Sidebar</h1>
-            <p>
+            <a id="btn-toggle" href="#" class="sidebar-toggler break-point-lg">
+              <i class="ri-menu-line ri-xl"></i>
+            </a>
+            <h1 style="margin-bottom: 0">Pro Sidebar</h1>
+            <span style="display: inline-block; margin-bottom: 10px">
               Responsive layout with advanced sidebar menu built with SCSS and vanilla Javascript
-            </p>
+            </span>
             <div>
               <a href="https://github.com/azouaoui-med/pro-sidebar-template" target="_blank">
                 <img
@@ -324,7 +320,7 @@
           </div>
           <footer class="footer">
             <small style="margin-bottom: 20px; display: inline-block">
-              © 2022 made with
+              © 2023 made with
               <span style="color: red; font-size: 18px">&#10084;</span> by -
               <a target="_blank" href="https://azouaoui.netlify.com"> Mohamed Azouaoui </a>
             </small>
