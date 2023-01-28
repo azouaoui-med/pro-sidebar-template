@@ -117,6 +117,7 @@
           }
           &.open {
             > a {
+              color: $secondary-text-color;
               &::after {
                 transform: rotate(45deg);
               }
