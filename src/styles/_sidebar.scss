@@ -3,6 +3,18 @@
   overflow-x: hidden !important;
   position: relative;
 
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: lighten($bg-color, 15);
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: $bg-color;
+  }
 
   .image-wrapper {
     overflow: hidden;
