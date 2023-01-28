@@ -8,7 +8,7 @@ Responsive layout with advanced sidebar menu built with SCSS and vanilla Javascr
 
 ## Screenshot
 
-![Pro Sidebar](https://user-images.githubusercontent.com/25878302/144433685-7cebf209-8912-46b4-b910-5068b7814807.png)
+![Pro Sidebar](https://user-images.githubusercontent.com/25878302/215290325-e5c6043b-4411-404c-83b8-dcc227df70ad.jpg)
 
 ## Installation
 
