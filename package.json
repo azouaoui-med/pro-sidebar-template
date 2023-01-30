@@ -1,8 +1,9 @@
 {
   "name": "pro-sidebar-template",
-  "version": "4.0.1-beta.1",
+  "version": "4.0.0",
   "main": "src/index.js",
   "repository": "https://github.com/azouaoui-med/pro-sidebar-template.git",
+  "description": "Powerful and customizable side navigation",
   "author": "Mohamed Azouaoui <azouaoui.med@gmail.com>",
   "license": "MIT",
   "scripts": {
