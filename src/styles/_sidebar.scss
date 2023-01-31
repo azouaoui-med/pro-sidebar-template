@@ -1,20 +1,9 @@
 .sidebar {
   color: $text-color;
-  overflow-x: hidden !important;
   position: relative;
-
-  &::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-  }
-  &:hover {
-    &::-webkit-scrollbar-thumb {
-      background-color: lighten($bg-color, 15);
-    }
-  }
-  &::-webkit-scrollbar {
-    width: 6px;
-    background-color: $bg-color;
-  }
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden !important;
 
   .image-wrapper {
     overflow: hidden;
@@ -32,18 +21,41 @@
       object-position: center;
     }
   }
-  &.has-bg-image .image-wrapper {
-    display: block;
+  &.has-bg-image {
+    .sidebar-layout {
+      background-color: rgba($bg-color, 0.85);
+    }
+    .image-wrapper {
+      display: block;
+      // filter: blur(3px);
+    }
   }
 
   .sidebar-layout {
-    height: auto;
+    height: 100%;
+    max-height: 100%;
     min-height: 100%;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     position: relative;
     background-color: $bg-color;
     z-index: 2;
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: lighten($bg-color, 15);
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: $bg-color;
+    }
 
     .sidebar-header {
       height: $sidebar-header-height;
