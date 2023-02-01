@@ -112,6 +112,12 @@ a {
       box-shadow: 1px 1px 4px $bg-color;
     }
 
+    &.has-bg-image {
+      .footer-box {
+        background-color: rgba(#162d4a, 0.7);
+      }
+    }
+
     &.collapsed {
       .pro-sidebar-logo {
         > h5 {
