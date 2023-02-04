@@ -400,18 +400,10 @@
 
 .sidebar {
   color: #7d84ab;
-  overflow-x: hidden !important;
   position: relative;
-}
-.sidebar::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-}
-.sidebar:hover::-webkit-scrollbar-thumb {
-  background-color: #1a4173;
-}
-.sidebar::-webkit-scrollbar {
-  width: 6px;
-  background-color: #0c1e35;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden !important;
 }
 .sidebar .image-wrapper {
   overflow: hidden;
@@ -429,17 +421,32 @@
   object-fit: cover;
   object-position: center;
 }
+.sidebar.has-bg-image .sidebar-layout {
+  background-color: rgba(12, 30, 53, 0.85);
+}
 .sidebar.has-bg-image .image-wrapper {
   display: block;
 }
 .sidebar .sidebar-layout {
-  height: auto;
+  height: 100%;
+  max-height: 100%;
   min-height: 100%;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #0c1e35;
   z-index: 2;
+}
+.sidebar .sidebar-layout::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}
+.sidebar .sidebar-layout:hover::-webkit-scrollbar-thumb {
+  background-color: #1a4173;
+}
+.sidebar .sidebar-layout::-webkit-scrollbar {
+  width: 6px;
+  background-color: #0c1e35;
 }
 .sidebar .sidebar-layout .sidebar-header {
   height: 100px;
@@ -784,6 +791,9 @@ a {
   color: white;
   -webkit-box-shadow: 1px 1px 4px #0c1e35;
   box-shadow: 1px 1px 4px #0c1e35;
+}
+.layout .sidebar.has-bg-image .footer-box {
+  background-color: rgba(22, 45, 74, 0.7);
 }
 .layout .sidebar.collapsed .pro-sidebar-logo > h5 {
   opacity: 0;
