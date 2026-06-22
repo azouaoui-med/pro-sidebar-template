@@ -13,7 +13,7 @@
     "gh-pages": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.29.6",
     "@babel/preset-env": "^7.16.4",
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^10.0.0",
